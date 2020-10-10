@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="compile_baseline" name="BaseLine">
+
+    <taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="tools/launch4j/launch4j.jar:tools/launch4j/lib/xstream.jar"/>
+
+    <path id="classpath">
+        <dirset dir="bin/"/>
+        <fileset dir="libs">
+            <include name="**/**.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean_baseline">
+        <delete dir="bin"/>
+    </target>
+
+    <target name="compile_baseline">
+        <mkdir dir="bin"/>
+
+        <javac encoding="UTF-8" srcdir="common:main:top:media:buttonDeck" destdir="bin" classpathref="classpath" debug="true" includeantruntime="false"/>
+
+        <copy todir="bin">
+            <fileset dir="common">
+                <include name="**/*.xml"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="clean_game">
+        <delete dir="${GAME}/bin"/>
+        <delete dir="${GAME}/build"/>
+    </target>
+
+    <target name="compile_game">
+        <mkdir dir="${GAME}/bin"/>
+        <mkdir dir="${GAME}/build"/>
+        <mkdir dir="${GAME}/build/share"/>
+
+        <javac encoding="UTF-8" srcdir="${GAME}/src" destdir="${GAME}/bin" classpathref="classpath" debug="true" includeantruntime="false"/>
+    </target>
+
+    <target name="pack_game">
+        <jar destfile="${GAME}/build/share/game.jar" duplicate="preserve">
+            <manifest>
+                <attribute name="Built-By" value="Aspect Gaming"/>
+                <attribute name="Main-Class" value="com.aspectgaming.gdx.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${GAME}/bin"/>
+            <fileset dir="bin"/>
+            <zipgroupfileset dir="libs">
+                <include name="libgdx/*.jar"/>
+                <include name="log/*.jar"/>
+                <include name="kryo/*.jar"/>
+                <include name="jna/*.jar"/>
+                <include name="netty/*.jar"/>
+                <include name="protostuff/*.jar"/>
+                <include name="led/*.jar"/>
+                <include name="spine-libgdx/*.jar"/>
+            </zipgroupfileset>
+        </jar>
+
+        <launch4j configFile="launch4j.xml" jarPath="${GAME}/build/share/game.jar" outfile="${GAME}/build/share/game_z.exe"/>
+        <delete file="${GAME}/build/share/game.jar"/>
+    </target>
+
+    <target name="copy_game_assets">
+        <copy todir="${GAME}/build/share/assets" overwrite="true">
+            <fileset dir="assets">
+                <include name="Message/**/**"/>
+                <include name="Fonts/**/*.fnt"/>
+                <include name="Icon/**"/>
+                <include name="Videos/**/*.mp4"/>
+                <include name="Sound/**/**"/>
+                <include name="DLL/**/**"/>
+            </fileset>
+        </copy>
+
+        <copy todir="${GAME}/build/share/assets" overwrite="true">
+            <fileset dir="${GAME}/assets">
+                <include name="Message/**/**"/>
+                <include name="Fonts/**/*.fnt"/>
+                <include name="Icon/**"/>
+                <include name="Videos/**/*.mp4"/>
+                <include name="Sound/**/**"/>
+                <include name="DLL/**/**"/>
+                <include name="SpineAnimation/**/**"/>
+            </fileset>
+        </copy>
+
+        <copy todir="${GAME}/build/share">
+            <fileset dir="${GAME}/assets">
+                <include name="Attract/**"/>
+                <include name="*.xml"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="pack_main_screen_images">
+        <java classname="com.aspectgaming.tools.TexturePacker">
+            <arg value="${GAME}/assets/Images/MainScreen"/>
+            <arg value="${GAME}/build/share/assets/Textures/MainScreen"/>
+            <arg value="StripWhiteSpace|Pot|Fast|LinearTexture"/>
+            <classpath refid="classpath"/>
+        </java>
+    </target>
+
+    <target name="pack_top_screen_images">
+        <java classname="com.aspectgaming.tools.TexturePacker">
+            <arg value="${GAME}/assets/Images/TopScreen"/>
+            <arg value="${GAME}/build/share/assets/Textures/TopScreen"/>
+            <arg value="StripWhiteSpace|Pot|Fast|LinearTexture"/>
+            <classpath refid="classpath"/>
+        </java>
+    </target>
+
+    <target name="pack_buttonDeck_screen_images">
+        <java classname="com.aspectgaming.tools.TexturePacker">
+            <arg value="${GAME}/assets/Images/ButtonDeckScreen"/>
+            <arg value="${GAME}/build/share/assets/Textures/ButtonDeckScreen"/>
+            <arg value="StripWhiteSpace|Pot|Fast|LinearTexture"/>
+            <classpath refid="classpath"/>
+        </java>
+    </target>
+
+    <target name="pack_main_screen_fonts">
+        <java classname="com.aspectgaming.tools.TexturePacker">
+            <arg value="${GAME}/assets/Fonts/MainScreen"/>
+            <arg value="${GAME}/build/share/assets/Fonts/MainScreen"/>
+            <arg value="Pot|Fast|LinearTexture"/>
+            <classpath refid="classpath"/>
+        </java>
+    </target>
+
+    <target name="pack_top_screen_fonts">
+        <java classname="com.aspectgaming.tools.TexturePacker">
+            <arg value="${GAME}/assets/Fonts/TopScreen"/>
+            <arg value="${GAME}/build/share/assets/Fonts/TopScreen"/>
+            <arg value="Pot|Fast|LinearTexture"/>
+            <classpath refid="classpath"/>
+        </java>
+    </target>
+
+    <target name="pack_buttonDeck_screen_fonts">
+        <java classname="com.aspectgaming.tools.TexturePacker">
+            <arg value="${GAME}/assets/Fonts/ButtonDeckScreen"/>
+            <arg value="${GAME}/build/share/assets/Fonts/ButtonDeckScreen"/>
+            <arg value="Pot|Fast|LinearTexture"/>
+            <classpath refid="classpath"/>
+        </java>
+    </target>
+
+    <target name="pack_game_images">
+        <parallel>
+            <antcall target="pack_main_screen_images"/>
+            <antcall target="pack_top_screen_images"/>
+            <antcall target="pack_buttonDeck_screen_images"/>
+        </parallel>
+    </target>
+
+    <target name="pack_game_fonts">
+        <antcall target="pack_main_screen_fonts"/>
+        <antcall target="pack_top_screen_fonts"/>
+        <antcall target="pack_buttonDeck_screen_fonts"/>
+
+        <copy todir="${GAME}/build/share/assets" overwrite="true">
+            <fileset dir="${GAME}/assets">
+                <include name="Fonts/**/*.fnt"/>
+            </fileset>
+        </copy>
+    </target>
+</project>

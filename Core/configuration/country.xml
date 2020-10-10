@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Countries>
+<!--
+Name, SAS Bill Acceptor Country Code: SAS 6.02, Table C-5, P175
+Country code: http://en.wikipedia.org/wiki/ISO_3166-1
+Currency code & sign: http://en.wikipedia.org/wiki/ISO_4217
+JCM Code: ID-003 Country Code / Currency Assign List
+-->
+<Countries>
+    <Country name="Australia"     countryCode="AUS" currency="AUD" sasCode="02" jcmCode="002" sign="$"/>
+    <Country name="Canada"        countryCode="CAN" currency="CAD" sasCode="07" jcmCode="008" sign="$"/>
+    <Country name="China"         countryCode="CHN" currency="CNY" sasCode="00" jcmCode="045" sign="¥"/>
+    <Country name="Japan"         countryCode="JPN" currency="JPY" sasCode="00" jcmCode="010" sign="¥"/>
+    <Country name="Hong Kong"     countryCode="HKG" currency="HKD" sasCode="00" jcmCode="089" sign="$"/>
+    <Country name="Macau"         countryCode="MAC" currency="MOP" sasCode="00" jcmCode="130" sign="$"/>
+    <Country name="Malaysia"      countryCode="MYS" currency="MYR" sasCode="00" jcmCode="033" sign="$"/>
+    <Country name="Philippines"   countryCode="PHL" currency="PHP" sasCode="00" jcmCode="074" sign="₱"/>
+    <Country name="South Korea"   countryCode="KOR" currency="KRW" sasCode="00" jcmCode="021" sign="₩"/>
+    <Country name="Thailand"      countryCode="THA" currency="THB" sasCode="00" jcmCode="018" sign="฿"/>
+    <Country name="Taiwan"        countryCode="TWN" currency="TWD" sasCode="00" jcmCode="029" sign="$"/>
+    <Country name="United States" countryCode="USA" currency="USD" sasCode="37" jcmCode="001" sign="$"/>
+    <Country name="Vietnam"       countryCode="VNM" currency="VND" sasCode="00" jcmCode="139" sign="₫"/>
+    <Country name="Costa Rica"    countryCode="CRI" currency="CRC" sasCode="00" jcmCode="077" sign="₡"/>
+</Countries>

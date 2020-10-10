@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coordinateLoader>
+    <resolution width="800" height="256">
+        <point name="Background">0,0</point>
+      
+		<point name="CashOutButton">-5,-8</point>
+		<point name="InfoButton">124,-8</point>
+		<point name="LanguageButton">213,-8</point>
+		<point name="GambleButton">341,-8</point>
+		<point name="ServiceButton">1131,-8</point>
+		<point name="ImgLanguage">226,42</point>
+
+		<point name="LineButton1">4,2</point>
+		<point name="LineButton2">170,2</point>
+		<point name="LineButton3">335,2</point>
+		<point name="LineButton4">504,2</point>
+		<point name="LineButton5">670,2</point>
+
+		<point name="BetButton1">4,153</point>
+		<point name="BetButton2">170,153</point>
+		<point name="BetButton3">335,153</point>
+		<point name="BetButton4">504,153</point>
+		<point name="BetButton5">670,153</point>
+		
+		<bound name="FPS">0,1044,1920,28</bound>
+        <bound name="Info">0,0,1920,28</bound>
+        <bound name="ErrorMessage">140,420,1080,1400</bound>
+		
+    </resolution>
+</coordinateLoader>

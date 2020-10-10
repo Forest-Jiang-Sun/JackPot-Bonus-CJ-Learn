@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE ActionMappings>
+<ActionMappings>
+    <Action event="Add Credit" state="*" type="core.actions.AddCreditAction" />
+    <Action event="Attendant" state="*" type="core.actions.AttendantButtonAction" />
+    <Action event="Cashout,Residual Cashout,Continue Cashout,Continue Cashout Restricted" state="GameIdle" type="core.actions.CashoutAction" />
+    <Action event="Cashout Fail" state="*" type="core.actions.CashoutFailAction" />
+	<Action event="Cashout,Residual Cashout,Continue Cashout,Continue Cashout Restricted" state="Tilt" type="core.actions.CashoutAction" />
+    <Action event="Game Registered,Game Disconnected" state="*" type="core.actions.GameRegisteredAction" />
+    <Action event="Handpay Reset" state="Handpay" type="core.actions.HandpayResetAction" />
+    <Action event="License Detected,License Demo Mode,License Expired" state="*" type="core.actions.LicenseAction" />
+    <Action event="Power On" state="*" type="core.actions.PowerOnAction" />
+    <Action event="Select Denom" state="GameIdle" type="core.actions.SelectDenomAction" />
+    <Action event="Select Game" state="*" type="core.actions.SelectGameAction" />
+    <Action event="Select Language" state="*" type="core.actions.SelectLanguageAction" />
+    <Action event="Select Bonus" state="*" type="core.actions.SelectBonusAction" />
+    <Action event="In Service,Out of Service,Enter Reserve,Exit Reserve" state="*" type="core.actions.ToggleServiceAction" />
+    <Action event="Mini Game" state="*" type="core.actions.MiniGameAction" />
+
+    <Action event="AnteBet" state="GameIdle" type="core.actions.basegame.AnteBetButtonAction" />
+    <Action event="Autoplay Start" state="GameIdle" type="core.actions.basegame.AutoPlayStartInGameIdleAction" />
+    <Action event="Bet" state="GameIdle" type="core.actions.basegame.BetButtonAction" />
+    <Action event="Change Bet" state="GameIdle" type="core.actions.basegame.ChangeCreditPerSelectionAction" />
+    <Action event="Change Selections" state="GameIdle" type="core.actions.basegame.ChangeSelectionsAction" />
+    <Action event="Game End" state="PayGameResults" type="core.actions.basegame.GameEndAction" />
+    <Action event="Game End" state="ReelStop" type="core.actions.basegame.GameEndInReelStopAction" />
+    <Action event="MaxBet" state="GameIdle" type="core.actions.basegame.MaxBetButtonAction" />
+    <Action event="Play,Selection,MaxBet,Wager,AnteBet" state="ReelStop" type="core.actions.basegame.MultiReelStopAction" />
+    <Action event="Play" state="GameIdle" type="core.actions.basegame.PlayButtonInGameIdleAction" />
+    <Action event="Game Start" state="PrimaryGameStarted" type="core.actions.basegame.PlayInPrimaryGameStartedAction" />
+    <Action event="Play,Selection,MaxBet,Wager,AnteBet" state="PayGameResults,FreeGameResults" type="core.actions.basegame.ReelStopAction" />
+    <Action event="Selection" state="GameIdle" type="core.actions.basegame.SelectionButtonAction" />
+    <Action event="Wager" state="GameIdle" type="core.actions.basegame.WagerButtonAction" />
+    <Action event="Change Base Bet" state="GameIdle" type="core.actions.basegame.ChangeBaseBetAction" />
+    <Action event="Change Multiplier" state="GameIdle" type="core.actions.basegame.ChangeMultiplierAction" />
+    <Action event="BaseBet" state="GameIdle" type="core.actions.basegame.BaseBetButtonAction" />
+    <Action event="Multiplier" state="GameIdle" type="core.actions.basegame.MultiplierButtonAction" />
+    <Action event="BetMultiSelection" state="GameIdle" type="core.actions.basegame.BetMultiplierSelectionButtonAction" />
+
+    <Action event="Game End" state="BonusDisplayPending" type="core.actions.bonus.GameEndInBonusDisplayPending" />
+    <Action event="Select Bonus" state="BonusActive" type="core.actions.bonus.SelectBonusInBonusActiveAction" />
+
+    <Action event="Animation End" state="FreeGameIntro" type="core.actions.freegame.EndFreeGameIntroAction" />
+    <Action event="Animation End" state="FreeGameOutro" type="core.actions.freegame.EndFreeGameOutroAction" />
+    <Action event="Game End" state="FreeGameResults" type="core.actions.freegame.GameEndFreeSpinAction" />
+    <Action event="Play" state="StartFreeSpin" type="core.actions.freegame.PlayButtonInStartFreeSpinAction" />
+    <Action event="Game Start" state="FreeGameStarted" type="core.actions.freegame.PlayInFreeGameStartedAction" />
+    <Action event="Play" state="FreeGameOutro" type="core.actions.basegame.MultiReelStopAction" />
+
+    <Action event="AnteBet" state="GambleChoice" type="core.actions.gamble.AnteBetButtonInGambleChoiceAction" />
+    <Action event="Autoplay Start" state="GambleChoice" type="core.actions.gamble.AutoPlayInGambleChoiceAction" />
+    <Action event="Bet" state="GambleChoice" type="core.actions.gamble.BetButtonInGambleChoiceAction" />
+    <Action event="Change Bet" state="GambleChoice" type="core.actions.gamble.ChangeCreditPerSelectionInGambleChoiceAction" />
+    <Action event="Change Selections" state="GambleChoice" type="core.actions.gamble.ChangeSelectionsInGambleChoiceAction" />
+    <Action event="Gamble" state="GambleChoice" type="core.actions.gamble.GambleButtonInGambleChoiceAction" />
+    <Action event="Gamble" state="GambleWin" type="core.actions.gamble.GambleButtonInGambleWinAction" />
+    <Action event="Gamble Half" state="GambleStarted" type="core.actions.gamble.GambleHalfAction" />
+    <Action event="Gamble Select" state="GambleStarted" type="core.actions.gamble.GambleSelectButtonAction" />
+    <Action event="Game End" state="GambleDisplayPending" type="core.actions.gamble.GameEndInGambleDisplayPendingAction" />
+    <Action event="MaxBet" state="GambleChoice" type="core.actions.gamble.MaxBetButtonInGambleChoiceAction" />
+    <Action event="Play" state="GambleChoice" type="core.actions.gamble.PlayButtonInGambleChoiceAction" />
+    <Action event="Selection" state="GambleChoice" type="core.actions.gamble.SelectionButtonInGambleChoiceAction" />
+    <Action event="Wager" state="GambleChoice" type="core.actions.gamble.WagerButtonInGambleChoiceAction" />
+    <Action event="Take Win" state="*" type="core.actions.gamble.TakeWinAction" />
+    <Action event="Change Base Bet" state="GambleChoice" type="core.actions.gamble.TakeWinPostInGambleChoiceAction" />
+    <Action event="Change Multiplier" state="GambleChoice" type="core.actions.gamble.TakeWinPostInGambleChoiceAction" />
+    <Action event="BaseBet" state="GambleChoice" type="core.actions.gamble.TakeWinPostInGambleChoiceAction" />
+    <Action event="Multiplier" state="GambleChoice" type="core.actions.gamble.TakeWinPostInGambleChoiceAction" />
+
+    <Action event="Attendant Menu" state="*" type="core.actions.intrusion.AttendantKeyAction" />
+    <Action event="Belly Door" state="*" type="core.actions.intrusion.BellyDoorIntrusionAction" />
+    <Action event="Calibrate Touchscreen" state="*" type="core.actions.intrusion.CalibrateTouchscreenAction" />
+    <Action event="Calibrate Touchscreen Exit" state="*" type="core.actions.intrusion.CalibrateTouchscreenExitAction" />
+    <Action event="Cash Box Door" state="*" type="core.actions.intrusion.CashBoxDoorIntrusionAction" />
+    <Action event="Cash Box" state="*" type="core.actions.intrusion.CashBoxIntrusionAction" />
+    <Action event="Credit Key-In" state="*" type="core.actions.intrusion.CreditKeyInAction" />
+    <Action event="Logic Door" state="*" type="core.actions.intrusion.LogicDoorIntrusionAction" />
+    <Action event="Main Door" state="*" type="core.actions.intrusion.MainDoorIntrusionAction" />
+    <Action event="Top Door" state="*" type="core.actions.intrusion.TopDoorIntrusionAction" />
+    <Action event="Optical Door" state="*" type="core.actions.intrusion.OpticalDoorIntrusionAction" />
+    <Action event="Drop Door" state="*" type="core.actions.intrusion.DropDoorIntrusionAction" />
+
+    <Action event="Bill Accepting" state="*" type="core.actions.peripherals.BillAcceptingAction" />
+    <Action event="Bill Acceptor Changed" state="*" type="core.actions.peripherals.BillAcceptorChangedAction" />
+    <Action event="Bill Acceptor Repaired" state="*" type="core.actions.peripherals.BillAcceptorRepairedAction" />
+    <Action event="Bill Acceptor Tilt" state="*" type="core.actions.peripherals.BillAcceptorTiltAction" />
+    <Action event="Bill Rejected" state="*" type="core.actions.peripherals.BillRejectedAction" />
+    <Action event="Note Accepted" state="*" type="core.actions.peripherals.NoteAcceptedAction" />
+    <Action event="Start Printing,Printer Validation Complete,Ticket Taken,Printing Time Out" state="*" type="core.actions.peripherals.PrinterPrintingAction" />
+    <Action event="Printer Reset" state="*" type="core.actions.peripherals.PrinterResetAction" />
+    <Action event="Printer Tilt,Printer Fault" state="*" type="core.actions.peripherals.PrinterTiltAction" />
+    <Action event="Printer Tilt Cleared,Printer Fault Cleared" state="*" type="core.actions.peripherals.PrinterTiltClearedAction" />
+    <Action event="Battery Error" state="*" type="core.actions.peripherals.BatteryTiltAction" />
+    <Action event="Battery Error Cleared" state="*" type="core.actions.peripherals.BatteryTiltClearedAction" />
+
+    <Action event="Animation End" state="ProgressiveIntro" type="core.actions.progressive.ProgressiveIntroEndAction" />
+    <Action event="Hit Mystery Progressive" state="*" type="core.actions.progressive.HitMysteryProgressiveAction" />
+    <Action event="Start Mystery Progressive" state="GameIdle,GambleChoice" type="core.actions.progressive.StartMysteryProgressiveAction" />
+    <Action event="Award Progressive" state="*" type="core.actions.progressive.AwardProgressiveAction" />
+    <Action event="Progressive Awarded" state="*" type="core.actions.progressive.ProgressiveAwardedAction" />
+    <Action event="Game End" state="ProgressiveResults" type="core.actions.progressive.GameEndInProgressiveAction" />
+    <Action event="Play" state="ProgressiveResults" type="core.actions.basegame.MultiReelStopAction" />
+
+    <Action event="AFT Lock,AFT UnLock" state="*" type="core.actions.sas.AFTLockAction" />
+    <Action event="AFT Start Transfer" state="AFTLock,GameIdle,CashoutPending,HostCashoutPending" type="core.actions.sas.AFTStartTransferAction" />
+    <Action event="Enter Maintenance Mode" state="*" type="core.actions.sas.EnterMaintenanceModeAction" />
+    <Action event="Exit Maintenance Mode" state="*" type="core.actions.sas.ExitMaintenanceModeAction" />
+    <Action event="Game Delay End" state="*" type="core.actions.sas.GameDelayAction" />
+    <Action event="Legacy Bonus" state="GameIdle,GambleChoice" type="core.actions.sas.LegacyBonusAction" />
+    <Action event="Reel Spin or Game Play Sounds Disabled" state="*" type="core.actions.sas.ReelSpinorGamePlaySoundsDisabledAction" />
+    <Action event="No Validation ID,No Validation ID Cleared" state="*" type="core.actions.sas.SasTiltAction" />
+    <Action event="No Progressive Information,No Progressive Information Cleared" state="*" type="core.actions.sas.SasTiltAction" />
+    <Action event="SAS Tilt,SAS Tilt Cleared" state="*" type="core.actions.sas.SasTiltAction" />
+    <Action event="SAS Shutdown" state="*" type="core.actions.sas.ShutDownAction" />
+    <Action event="Sound Off" state="*" type="core.actions.sas.SoundOffAction" />
+    <Action event="Sound On" state="*" type="core.actions.sas.SoundOnAction" />
+    <Action event="SAS Start Up" state="*" type="core.actions.sas.StartUpAction" />
+
+    <Action event="Test Mode Start" state="*" type="core.actions.test.TestModeStartAction" />
+    <Action event="Test Mode End" state="*" type="core.actions.test.TestModeStopAction" />
+    <Action event="Gamble" state="GameIdle" type="core.actions.test.TestResultAction" />
+</ActionMappings>

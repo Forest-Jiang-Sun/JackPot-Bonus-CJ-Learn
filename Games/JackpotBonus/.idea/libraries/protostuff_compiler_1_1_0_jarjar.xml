@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="protostuff-compiler-1.1.0-jarjar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../BaseLine/tools/protostuff/protostuff-compiler-1.1.0-jarjar.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

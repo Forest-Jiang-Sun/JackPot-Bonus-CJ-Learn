@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ledcontroller">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../BaseLine/libs/led/ledcontroller.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

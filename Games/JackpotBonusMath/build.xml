@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Math" default="build">
+	<property name="game_name" value="game"/>
+	<property name="game_version" value="1.0.0"/>
+	<property name="math_name" value="math" />
+	<property name="math_version" value="0.0.1" />
+
+	<property name="coreMathDir" value="../../Core/math/"/>
+
+	<path id="classpath">
+		<fileset dir="lib/aspect">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="lib/log/">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="init">
+		<mkdir dir="bin" />
+		<mkdir dir="build" />
+		<mkdir dir="${coreMathDir}" />
+	</target>
+
+	<target name="compile" depends="init">
+		<replace file="src/java/com/LT/math/JackpotBonus/JackpotBonusMathConstants.java" value="&quot;${math_version}&quot;/*AntTag*/">
+			<replacetoken>"1.0.0"/*AntTag*/</replacetoken>
+		</replace>
+		<javac encoding="UTF-8" srcdir="src/java" destdir="bin" classpathref="classpath" debug="true" includeantruntime="false" />
+
+		<replace file="src/java/com/LT/math/JackpotBonus/JackpotBonusMathConstants.java" token="&quot;${math_version}&quot;/*AntTag*/" value="&quot;1.0.0&quot;/*AntTag*/" />
+	</target>
+
+	<target name="build" depends="compile">
+		<jar jarfile="build/${math_name}_H-${math_version}.jar">
+			<fileset dir="bin" />
+			<manifest>
+				<attribute name="Built-By" value="LT Game" />
+			</manifest>
+		</jar>
+		<copy todir="${coreMathDir}" overwrite="true">
+			<fileset dir="build/" />
+		</copy>
+	</target>
+
+	<target name="clean">
+		<delete dir="build" />
+		<delete dir="bin" />
+		<delete dir="${coreMathDir}" />
+	</target>
+
+</project>

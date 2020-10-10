@@ -1,0 +1,156 @@
+State:Off,GambleStarted
+Data:7D,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+
+State:Diagnostics
+Data:7D,00,00,ff,ff,f0,00,00,c0,00,00,00,00,00,00,00,00,00
+
+State:Tilt,Handpay,DisabledByOnlineSystem
+Data:7d,00,00,ff,ff,f0,00,00,01,20,20,00,00,00,00,00,00,00
+
+State:MachineIdle
+Data:7d,00,00,ff,00,01,04,04,1b,00,00,00,00,00,00,00,00,00
+
+State:GameIdle,GambleChoice
+Data:7d,00,00,aa,aa,a1,0a,0a,8f,00,00,00,00,00,00,4b,4b,00
+
+State:PayGameResults
+Data:7d,00,00,aa,aa,a1,0a,0a,0f,00,00,00,00,00,00,00,00,08
+
+State:PayGameResultsInAutoPlay
+Data:7d,00,00,49,92,41,20,20,0f,00,00,00,00,00,00,00,00,08
+
+State:StartFreeSpin
+Data:7d,00,00,aa,aa,a1,0a,0a,91,00,00,00,00,00,00,4b,4b,10
+
+State:FreeGameStarted
+Data:7d,00,00,aa,aa,a1,0a,0a,11,00,00,00,00,00,00,00,00,10
+
+
+################ LED Control ##################
+#
+#              3  2  1  20 19 
+#           4                 18 
+#         5                      17
+#         6    RED GREEN BLUE    16
+#         7                      15
+#           8                 14
+#              9  10 11 12 13
+#
+#State:
+#    VerifyingSignature
+#    CheckingCriticalMemory
+#    Handpay
+#    Tilt
+#    OutOfService
+#    Reserve
+#    DisabledByOnlineSystem
+#    AttendantApp
+#    CalibrateTouchscreen
+#    BillAccepting
+#    CashoutPending
+#    TicketPrinting
+#    DelayGame
+#    AFTLock
+#
+#    GameIdle
+#    PrimaryGameStarted
+#    PayGameResults
+#    ReelStop
+#    GambleChoice
+#
+#    SelectBet
+#    GambleStarted
+#    GambleDisplayPending
+#    GambleWin
+#    StartFreeSpin
+#    FreeGameIntro
+#    FreeGameOutro
+#    FreeGameStarted
+#    FreeGameResults
+#    BonusActive
+#    BonusDisplayPending
+#    AwardSASProgressive
+#    SASProgressiveDisplayPending
+#    SelectGame
+#
+#    Diagnostics
+#    MachineIdle
+#    PayGameResultsInAutoPlay (PayGameResults state with AutoPlay enabled)
+#    Off
+#
+#Data:
+#    Byte 00, 01, 02 = 0x7D, 0x00, 0x00
+#    Byte 03 = LED's 1 to 8 ON/OFF
+#    Byte 04 = LED's 9 to 16 ON/OFF
+#    Byte 05
+#            Bits 1, 0 = Pattern type
+#                    0, 0 = Static LED Pattern (Pattern Timers Not Used)
+#                    0, 1 = Rotate CW
+#                    1, 0 = Rotate CCW
+#                    1, 1 = Invert LED Pattern
+#            Bits 2, 3 = Not Used
+#            Bits 4 to 7 = LED's 17 to 20 ON/OFF
+#    Byte 06 = Pattern Timer 1 (Part 1 of Pattern Cycle)
+#    Byte 07 = Pattern Timer 2 (Part 2 of Pattern Cycle)
+#    Byte 08 = Color Control
+#            Bits 0, 1 = Red
+#                    0, 0 = Red always Off (Red Timers not used)
+#                    0, 1 = Blink Starting with RED OFF
+#                    1, 0 = Blink Starting with RED ON
+#                    1, 1 = Red always On (Red Timers not used)
+#            Bits 2, 3 = Green
+#                    0, 0 = Green always Off (Green Timers not used)
+#                    0, 1 = Blink Starting with Green OFF
+#                    1, 0 = Blink Starting with Green ON
+#                    1, 1 = Red always On (Green Timers not used)
+#            Bits 4, 5 = Blue
+#                    0, 0 = Blue always Off (Blue Timers not used)
+#                    0, 1 = Blink Starting with Blue OFF
+#                    1, 0 = Blink Starting with Blue ON
+#                    1, 1 = Blue always On (Blue Timers not used)
+#            Bits 6, 7 = White
+#                    0, 0 = White always Off (White Timers not used)
+#                    0, 1 = Blink Starting with White OFF
+#                    1, 0 = Blink Starting with White ON
+#                    1, 1 = White always On (White Timers not used)
+#    Byte 09 = Red LED Timer 1 (Part 1 of Red Cycle)
+#    Byte 10 = Red LED Timer 2 (Part 2 of Red Cycle)
+#    Byte 11 = Green LED Timer 1 (Part 1 of Green Cycle)
+#    Byte 12 = Green LED Timer 2 (Part 2 of Green Cycle)
+#    Byte 13 = Blue LED Timer 1 (Part 1 of Blue Cycle)
+#    Byte 14 = Blue LED Timer 2 (Part 2 of Blue Cycle)
+#    Byte 15 = White LED Timer 1 (Part 1 of White Cycle)
+#    Byte 16 = White LED Timer 2 (Part 2 of White Cycle)
+#    Byte 17 = LED Intensity
+#            Bits 1, 0 = Red LED Intensity
+#                    0,0 = 100% On Red Always ON
+#                    0,1 = 20% On Red Pulse (1mS ON and 4mS Off)
+#                    1,0 = 40% On Red Pulse (2mS ON and 3mS Off)
+#                    1,1 = 60% On Red Pulse (3mS ON and 2ms Off)
+#            Bits 3, 2 = Green LED Intensity
+#                    0,0 = 100% On Green Always ON
+#                    0,1 = 20% On Green Pulse (1mS ON and 4mS Off)
+#                    1,0 = 40% On Green Pulse (2mS ON and 3mS Off)
+#                    1,1 = 60% On Green Pulse (3mS ON and 2ms Off)
+#            Bits 5, 4 = Blue LED Intensity
+#                    0,0 = 100% On Blue Always ON
+#                    0,1 = 20% On Blue Pulse (1mS ON and 4mS Off)
+#                    1,0 = 40% On Blue Pulse (2mS ON and 3mS Off)
+#                    1,1 = 60% On Blue Pulse (3mS ON and 2ms Off)
+#            Bits 7, 6 = White LED Intensity
+#                    0,0 = 100% On White Always ON
+#                    0,1 = 20% On White Pulse (1mS ON and 4mS Off)
+#                    1,0 = 40% On White Pulse (2mS ON and 3mS Off)
+#                    1,1 = 60% On White Pulse (3mS ON and 2ms Off)
+#Note:
+#        All Timers have a 10ms multiplier, giving and over all range from 0 to 2.55 Second
+#        So a timer setting of 0x0F = 150mS, or 0xFF = 2.55 Seconds.
+#        During a cycle: When Timer 1 expires then Timer 2 is started. When Timer 2 expires then Timer 1 is started.
+#Warning:
+#        There are a total of 60 LEDs around the edge of the PCB that create the halo
+#        effect. Current is limited in these devices to give a dazzling color effect at an
+#        effective brightness. It is not recommended to turn "full" on all 20 RGB LEDs (white
+#        color) for extended periods of time because of the heat generated by the LEDs and the
+#        current limiting components. Excessive heat can damage or deform the plastic halo ring
+#        or other plastic parts near these heat generating components. Use the "LED Intensity"
+#        and "Timers 1 & 2" commands to control "white" color for extended periods of time.

@@ -1,0 +1,83 @@
+
+logo.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BB
+  rotate: false
+  xy: 2304, 2743
+  size: 624, 628
+  orig: 624, 628
+  offset: 0, 0
+  index: -1
+City
+  rotate: false
+  xy: 0, 295
+  size: 820, 238
+  orig: 820, 238
+  offset: 0, 0
+  index: -1
+CityYING
+  rotate: false
+  xy: 3054, 3840
+  size: 820, 238
+  orig: 820, 238
+  offset: 0, 0
+  index: -1
+Group 1
+  rotate: false
+  xy: 0, 2529
+  size: 2302, 1549
+  orig: 2302, 1549
+  offset: 0, 0
+  index: -1
+Jackpot
+  rotate: false
+  xy: 0, 1532
+  size: 2279, 995
+  orig: 2279, 995
+  offset: 0, 0
+  index: -1
+Jackpotying
+  rotate: false
+  xy: 0, 535
+  size: 2278, 995
+  orig: 2278, 995
+  offset: 0, 0
+  index: -1
+X1
+  rotate: false
+  xy: 2304, 2544
+  size: 201, 197
+  orig: 201, 197
+  offset: 0, 0
+  index: -1
+X2
+  rotate: false
+  xy: 822, 336
+  size: 201, 197
+  orig: 201, 197
+  offset: 0, 0
+  index: -1
+X3
+  rotate: false
+  xy: 0, 0
+  size: 308, 293
+  orig: 308, 293
+  offset: 0, 0
+  index: -1
+XXX
+  rotate: false
+  xy: 3054, 3663
+  size: 176, 175
+  orig: 176, 175
+  offset: 0, 0
+  index: -1
+YY
+  rotate: false
+  xy: 2304, 3373
+  size: 748, 705
+  orig: 748, 705
+  offset: 0, 0
+  index: -1

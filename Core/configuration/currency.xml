@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Currencies>
+<Currencies>
+    <Currency code="USD" sign="$">
+        <Denom>100</Denom>
+        <Denom>10</Denom>
+        <Denom>25</Denom>
+        <Denom>50</Denom>
+	<Denom>200</Denom>
+        <Denom>500</Denom>
+        <Denom>1000</Denom>
+        <Denom>2000</Denom>
+        <Denom>5000</Denom>
+        <Denom>10000</Denom>
+        <Denom>25000</Denom>
+    </Currency>
+    <Currency code="HKD" sign="$" show="USD">
+        <Denom>100</Denom>
+        <Denom>200</Denom>
+        <Denom>500</Denom>
+        <Denom>1000</Denom>
+        <Denom>2000</Denom>
+        <Denom>5000</Denom>
+        <Denom>10000</Denom>
+        <Denom>1</Denom>
+        <Denom>2</Denom>
+        <Denom>5</Denom>
+        <Denom>10</Denom>
+        <Denom>20</Denom>
+        <Denom>25</Denom>
+        <Denom>50</Denom>
+    </Currency>
+    <Currency code="MOP" sign="$" show="USD">
+        <Denom>100</Denom>
+        <Denom>200</Denom>
+        <Denom>500</Denom>
+        <Denom>1000</Denom>
+        <Denom>2000</Denom>
+        <Denom>5000</Denom>
+        <Denom>10000</Denom>
+        <Denom>1</Denom>
+        <Denom>2</Denom>
+        <Denom>5</Denom>
+        <Denom>10</Denom>
+        <Denom>20</Denom>
+        <Denom>25</Denom>
+        <Denom>50</Denom>
+    </Currency>
+    <Currency code="PHP" sign="₱">
+        <Denom>1</Denom>
+        <Denom>2</Denom>
+        <Denom>5</Denom>
+        <Denom>10</Denom>
+        <Denom>20</Denom>
+        <Denom>25</Denom>
+        <Denom>50</Denom>
+        <Denom>100</Denom>
+        <Denom>200</Denom>
+        <Denom>500</Denom>
+        <Denom>1000</Denom>
+    </Currency>
+    <Currency code="KRW" sign="₩">
+        <Denom>100</Denom>
+        <Denom>1000</Denom>
+        <Denom>2000</Denom>
+        <Denom>5000</Denom>
+        <Denom>10000</Denom>
+        <Denom>50000</Denom>
+        <Denom>100000</Denom>
+    </Currency>
+    <Currency code="THB" sign="฿">
+        <Denom>1</Denom>
+        <Denom>5</Denom>
+        <Denom>10</Denom>
+        <Denom>20</Denom>
+        <Denom>50</Denom>
+        <Denom>100</Denom>
+        <Denom>500</Denom>
+        <Denom>1000</Denom>
+    </Currency>
+    <Currency code="VND" sign="$">
+        <Denom>1</Denom>
+        <Denom>2</Denom>
+        <Denom>5</Denom>
+        <Denom>10</Denom>
+        <Denom>20</Denom>
+        <Denom>25</Denom>
+        <Denom>50</Denom>
+        <Denom>100</Denom>
+        <Denom>200</Denom>
+        <Denom>500</Denom>
+        <Denom>1000</Denom>
+        <Denom>2000</Denom>
+        <Denom>5000</Denom>
+        <Denom>10000</Denom>
+    </Currency>
+    <Currency code="CRC" sign="₡">
+        <Denom>1</Denom>
+        <Denom>5</Denom>
+        <Denom>10</Denom>
+        <Denom>20</Denom>
+        <Denom>50</Denom>
+        <Denom>100</Denom>
+    </Currency>
+</Currencies>

@@ -1,0 +1,3 @@
+main.stored.param.REEL_0_RNG=2217; main.stored.param.REEL_1_RNG=611; main.stored.param.REEL_2_RNG=2525; 
+main.stored.param.REEL_0_RNG=500; main.stored.param.REEL_1_RNG=8; main.stored.param.REEL_2_RNG=800; 
+main.stored.param.REEL_0_RNG=300; main.stored.param.REEL_1_RNG=38; main.stored.param.REEL_2_RNG=300; 

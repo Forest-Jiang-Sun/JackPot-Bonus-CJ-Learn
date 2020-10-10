@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Themes>
+<Themes leds="112">
+    <Theme name="MachineIdle" state="MachineIdle" sync="true">
+        <Animation first="1" last="104" script="MachineIdle.csv" />
+    </Theme>
+    <Theme name="MachineIdleBar" state="MachineIdle" sync="true">
+        <Animation first="105" last="110" script="Bar.MachineIdle.csv" />
+    </Theme>
+    <Theme name="GameIdleTop" state="GameIdle,GambleChoice" sync="true">
+        <Animation first="1" last="28" script="GamePlay.csv" />
+    </Theme>
+    <Theme name="GameIdle" state="GameIdle,GambleChoice" sync="true">
+        <Animation first="29" last="110" script="GameIdle.csv" />
+    </Theme>
+    <Theme name="GamePlay" state="PrimaryGameStarted,PayGameResults,GambleStarted,GambleWin" sync="true">
+        <Animation first="1" last="110" script="GamePlay.csv" />
+    </Theme>
+    <Theme name="Bonus" state="BonusActive,BonusDisplayPending" sync="false">
+        <Animation first="1" last="110" script="Bonus.csv" />
+    </Theme>
+    <Theme name="FreeGame" state="StartFreeSpin,FreeGameStarted,FreeGameResults" sync="false">
+        <Animation first="1" last="104" oneTimeOnly="true" script="RainbowStart.csv" />
+        <Animation first="1" last="104" script="Rainbow.csv" />
+    </Theme>
+    <Theme name="FreeGameBar" state="StartFreeSpin,FreeGameStarted,FreeGameResults" sync="false">
+        <Animation first="105" last="110" script="Bar.SolidGold.csv" />
+    </Theme>
+    <Theme name="Diagnostics" state="Diagnostics" sync="true">
+        <Animation first="1" last="110" script="Diagnostics.csv" />
+    </Theme>
+    <Theme name="OneWall" sync="true">
+        <Animation first="1" last="110" script="OneWall.csv" />
+    </Theme>
+</Themes>

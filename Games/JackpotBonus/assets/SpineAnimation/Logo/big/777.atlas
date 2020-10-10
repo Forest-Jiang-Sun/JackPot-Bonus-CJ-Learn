@@ -1,0 +1,90 @@
+
+logo2.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2X
+  rotate: false
+  xy: 539, 15
+  size: 161, 137
+  orig: 161, 137
+  offset: 0, 0
+  index: -1
+3X
+  rotate: false
+  xy: 702, 12
+  size: 155, 140
+  orig: 155, 140
+  offset: 0, 0
+  index: -1
+7XA
+  rotate: true
+  xy: 859, 15
+  size: 137, 142
+  orig: 137, 142
+  offset: 0, 0
+  index: -1
+7XC
+  rotate: true
+  xy: 859, 15
+  size: 137, 142
+  orig: 137, 142
+  offset: 0, 0
+  index: -1
+7XB
+  rotate: true
+  xy: 379, 0
+  size: 152, 158
+  orig: 152, 158
+  offset: 0, 0
+  index: -1
+FA
+  rotate: false
+  xy: 194, 7
+  size: 183, 145
+  orig: 183, 145
+  offset: 0, 0
+  index: -1
+FB
+  rotate: false
+  xy: 0, 14
+  size: 192, 138
+  orig: 192, 138
+  offset: 0, 0
+  index: -1
+FC
+  rotate: true
+  xy: 1835, 793
+  size: 212, 143
+  orig: 212, 143
+  offset: 0, 0
+  index: -1
+FX
+  rotate: false
+  xy: 0, 154
+  size: 1206, 851
+  orig: 1206, 851
+  offset: 0, 0
+  index: -1
+reel
+  rotate: false
+  xy: 1208, 397
+  size: 602, 291
+  orig: 625, 315
+  offset: 12, 12
+  index: -1
+reelBB
+  rotate: false
+  xy: 1208, 690
+  size: 625, 315
+  orig: 625, 315
+  offset: 0, 0
+  index: -1
+ttt
+  rotate: false
+  xy: 1208, 76
+  size: 567, 319
+  orig: 567, 319
+  offset: 0, 0
+  index: -1

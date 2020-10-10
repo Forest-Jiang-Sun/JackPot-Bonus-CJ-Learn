@@ -1,0 +1,24 @@
+<launch4jConfig>
+    <headerType>gui</headerType>
+    <outfile>build\game_z.exe</outfile>
+    <jar>build\game.jar</jar>
+    <dontWrapJar>false</dontWrapJar>
+    <errTitle></errTitle>
+    <downloadUrl>http://java.com/download</downloadUrl>
+    <supportUrl></supportUrl>
+    <cmdLine></cmdLine>
+    <chdir></chdir>
+    <priority>normal</priority>
+    <stayAlive>false</stayAlive>
+    <icon>assets\Icon\AspectGaming.ico</icon>
+    <manifest></manifest>
+    <jre>
+        <path></path>
+        <bundledJre64Bit>false</bundledJre64Bit>
+        <minVersion>1.8.0</minVersion>
+        <maxVersion></maxVersion>
+        <jdkPreference>preferJre</jdkPreference>
+        <runtimeBits>64</runtimeBits>
+        <opt>-Djava.library.path=lib;C:\Windows\System32</opt>
+    </jre>
+</launch4jConfig>

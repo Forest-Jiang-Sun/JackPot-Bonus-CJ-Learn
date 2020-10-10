@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="unit-test">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JackpotBonusMath/lib/unit-test/cobertura.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JackpotBonusMath/lib/unit-test/easymock.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JackpotBonusMath/lib/unit-test/junit-4.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

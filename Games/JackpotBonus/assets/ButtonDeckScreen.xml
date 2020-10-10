@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameConfiguration debug="true" gameName="JackpotBonus" type="ButtonDeckScreen">
+    <display screenIndex="2">
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>256</height>
+        <vSync>false</vSync>
+        <fps>58</fps>
+        <visible>true</visible>
+        <undecorated>false</undecorated>
+		<forcedFullScreen>true</forcedFullScreen>
+    </display>
+
+    <listener>
+        <data>CommandData</data>
+        <data>ContextData</data>
+        <data>PaytableData</data>
+        <data>ProgressiveValuesData</data>
+        <data>GameResetData</data>
+        <data>SettingData</data>
+
+         <action>StartAttract</action>
+         <action>StopAttract</action>
+    </listener>
+
+    <openGL useGL30="false" samples="0" pixelBufferObject="true"/>
+
+    <resolutions width="800" height="256" video="800x256">
+        <components>
+			<component>com.aspectgaming.gdx.component.drawable.background.ButtonDeckBackgroundComponent</component>>
+			<!--<component>com.aspectgaming.gdx.component.drawable.attract.ButtonDeckAttractMovieComponent</component>-->
+            <component>com.aspectgaming.gdx.component.drawable.betbutton.BetButtonsComponent</component>
+			<component>com.aspectgaming.gdx.component.drawable.lineButton.LineButtonComponent</component>
+
+        </components>
+    </resolutions>
+	
+</gameConfiguration>

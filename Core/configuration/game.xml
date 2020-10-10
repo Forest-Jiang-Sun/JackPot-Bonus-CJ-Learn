@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Game>
+    <Math type="com.LT.math.JackpotBonus.JackpotBonusMath">
+        <Progressive group="1" protocol="StandAlone" broadcastPort="12047"/>
+        <FixedMaxBet>true</FixedMaxBet>
+    </Math>
+
+
+    <Gamble enabled="false" maxRound="8" configLimit="8">
+        <Choice value="0" name="Black"/>
+        <Choice value="1" name="Red"/>
+        <Choice value="2" name="Spades"/>
+        <Choice value="3" name="Clubs"/>
+        <Choice value="4" name="Diamonds"/>
+        <Choice value="5" name="Hearts"/>
+        <Choice name="Take Win"/>
+    </Gamble>
+    <Cabinets selected="LTS-1">
+    </Cabinets>
+    <GameHistoryVersion>0</GameHistoryVersion>
+    <BPConfigType>1</BPConfigType>
+    <ButtonPanel>
+        <Button name="A" line="2" led="6" type="Cashout"/>
+        <Button name="B" line="10" led="16" type="Selection" value="1"/>
+        <Button name="C" line="9" led="17" type="Selection" value="2"/>
+        <Button name="D" line="8" led="18" type="Selection" value="3"/>
+        <Button name="E" line="7" led="19" type="Selection" value="4"/>
+        <Button name="F" line="6" led="20" type="Selection" value="5"/>
+        <Button name="G" line="3" led="15" type="Attendant"/>
+        <Button name="H" line="11" led="21" type="" value="" startPlay="false"/>
+        <Button name="I" line="12" led="22" type="" value="" startPlay="false"/>
+        <Button name="J" line="13" led="23" type="" value="" startPlay="false"/>
+        <Button name="K" line="14" led="24" type="" value="" startPlay="false"/>
+        <Button name="L" line="15" led="25" type="Play"/>
+        <Button name="M" line="4" led="3" type="Play"/>
+    </ButtonPanel>
+    <ButtonPanelConfigSet operatorCanSelectSet="true" defaultPanel="Standard">
+        <ButtonPanel id="Standard" operatorCanChange="false">
+            <Button name="A" line="2" led="6" type="Cashout"/>
+            <Button name="B" line="10" led="16" type="BetMultiSelection" value="1" betCredits="1" payLine="1"/>
+            <Button name="C" line="9" led="17" type="BetMultiSelection" value="1" betCredits="2" payLine="2"/>
+            <Button name="D" line="8" led="18" type="BetMultiSelection" value="1" betCredits="3" payLine="3"/>
+            <Button name="E" line="7" led="19" type="BetMultiSelection" value="1" betCredits="4" payLine="4"/>
+            <Button name="F" line="6" led="20" type="BetMultiSelection" value="1" betCredits="5" payLine="5"/>
+            <Button name="G" line="3" led="15" type="Attendant"/>
+            <Button name="H" line="11" led="21" type="" value="" startPlay="false"/>
+			<Button name="I" line="12" led="22" type="" value="" startPlay="false"/>
+			<Button name="J" line="13" led="23" type="" value="" startPlay="false"/>
+			<Button name="K" line="14" led="24" type="" value="" startPlay="false"/>
+            <Button name="L" line="15" led="25" type="Play"/>
+            <Button name="M" line="4" led="3" type="Play"/>
+        </ButtonPanel>
+        <ButtonPanel id="MaxBet" operatorCanChange="false">
+            <Button name="A" line="2" led="6" type="Cashout"/>
+            <Button name="B" line="10" led="16" type="" value="1"/>
+            <Button name="C" line="9" led="17" type="" value="2"/>
+            <Button name="D" line="8" led="18" type="" value="3"/>
+            <Button name="E" line="7" led="19" type="" value="4"/>
+            <Button name="F" line="6" led="20" type="BetMultiSelection" value="1" betCredits="5" payLine="5"/>
+            <Button name="G" line="3" led="15" type="Attendant"/>
+            <Button name="H" line="11" led="21" type="" value="" startPlay="false"/>
+            <Button name="I" line="12" led="22" type="" value="" startPlay="false"/>
+            <Button name="J" line="13" led="23" type="" value="" startPlay="false"/>
+            <Button name="K" line="14" led="24" type="" value="" startPlay="false"/>
+            <Button name="L" line="15" led="25" type="Play"/>
+            <Button name="M" line="4" led="3" type="Play"/>
+        </ButtonPanel>
+    </ButtonPanelConfigSet>
+    <Languages value="en-US" choices="en-US|zh-CHT"/>
+    <ScreenButtons>Play</ScreenButtons>
+    <AttractMovie screen="Both Screens" timerMinutes="3"/>
+    <GameClients>
+        <Program>game_z.exe MainScreen</Program>
+        <Program>game_z.exe TopScreen</Program>
+        <Program>game_z.exe ButtonDeckScreen</Program>
+    </GameClients>
+    <Signature>
+        <Path>share/game_z.exe</Path>
+        <Path>share/assets</Path>
+    </Signature>
+</Game>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameConfiguration debug="true" keyboardTest="true" disableMouse="false" gameName="JackpotBonus_H" type="MainScreen" version="%VERSION%">
+    <display screenIndex="0">
+        <x>0</x>
+        <y>0</y>
+        <width>1920</width>
+        <height>1080</height>
+        <vSync>true</vSync>
+        <fps>60</fps>
+        <visible>true</visible>
+        <undecorated>false</undecorated>
+        <forcedFullScreen>true</forcedFullScreen>
+    </display>
+
+    <listener>
+        <data>CommandData</data>
+        <data>ContextData</data>
+        <data>GameResetData</data>
+        <data>MachineData</data>
+        <data>SettingData</data>
+        <data>GameRecallData</data>
+
+        <action>StartAttract</action>
+        <action>StopAttract</action>
+        <action>ChangeTestReel</action>
+        <action>ChangeTestReelStop</action>
+        <action>MultiReelStop</action>
+		<action>ButtonPressed</action>
+    </listener>
+
+    <openGL useGL30="false" samples="0" pixelBufferObject="true"/>
+
+    <resolutions width="1920" height="1080" video="1920x1080">
+        <components>
+            <component>com.aspectgaming.gdx.component.ledcontroller.LEDControllerComponent</component>
+            <component>com.aspectgaming.gdx.component.connector.TopScreenAgentComponent</component>
+            <component>com.aspectgaming.gdx.component.connector.ButtonDeckScreenAgentComponent</component>
+            <component>com.aspectgaming.gdx.component.audio.AudioComponent</component>
+            <component>com.aspectgaming.gdx.component.statemachine.StateMachineComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.background.BackgroundComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.reel.ReelComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.winshow.WinShowComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.background.ForegroundComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.subsymbol.SubSymbolComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.meter.MetersComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.button.ButtonsComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.winshow.PaylinesComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.messagebar.MessageBarComponent</component>
+            <!-- <component>com.aspectgaming.gdx.component.drawable.gamble.GambleComponent</component> -->
+            <component>com.aspectgaming.gdx.component.drawable.freegames.FreeGameAnticipationSpinComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.messagebar.MoneyMessageComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.system.SystemMessageComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.progressivereel.ProgressiveReelComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.progressivereel.ProgressiveReelAnimComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.progressivereel.ProgressiveCoins</component>
+            <component>com.aspectgaming.gdx.component.drawable.progressivereel.ProgressiveBgCoinFillComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.background.AnimationComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.freegames.FreeGameIntroOutroComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.retrigger.RetriggerComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.tilt.TiltComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.gamerecall.GameRecallExtComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.test.TestComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.diagnostic.DiagnosticComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.help.HelpComponent</component>
+        </components>
+    </resolutions>
+
+    <reel defaultStops="0,5,0,7,5,6,7,0,6,7,3,6,0,2,0" defaultFreeGameStops="0,5,0,7,5,6,7,0,6,7,3,6,0,2,0" scatterAdjacent="false" spinDuration="0.25" reelInterval="45" manualStop="true" manualStopInFreeGames="true">
+        <fastSpin scatterTriggered="false" spinCount="76,117,158" motionBlur="4"/>
+        <singleReel index="0">
+            <width>384</width>
+            <symbolHeight>146</symbolHeight>
+            <symbolInterval>0</symbolInterval>
+        </singleReel>
+
+        <singleReel index="1">
+            <width>384</width>
+            <symbolHeight>146</symbolHeight>
+            <symbolInterval>0</symbolInterval>
+        </singleReel>
+
+        <singleReel index="2">
+            <width>384</width>
+            <symbolHeight>146</symbolHeight>
+            <symbolInterval>0</symbolInterval>
+        </singleReel>
+    </reel>
+
+    <progressiveReel defaultStops ="1" spinDuration="0.1" reelInterval="45" scaleToDuration = "0.2" delayEndIntro = "2.5" delayStartNext = "3.0">
+        <progressiveSingleReel index="5">
+            <width>258</width>
+            <symbolHeight>295</symbolHeight>
+            <symbolInterval>0</symbolInterval>
+            <reelStrip type = "progressive" rtp = "progressive" selection = "50">4, 3, 2, 1</reelStrip>
+        </progressiveSingleReel>
+    </progressiveReel>
+
+    <led>
+        <base>74</base>
+        <logo>65</logo>
+        <buttonPanel>86</buttonPanel>
+        <body>162</body>
+        <lowerMonitor>92</lowerMonitor>
+        <upperMonitor>92</upperMonitor>
+        <buttonLightRing>12</buttonLightRing>
+        <idle>
+            <Chase  stringId="BASE_STRING_ID" foregroundRed="255" foregroundGreen="125" foregroundBlue="0" backgroundRed="175" backgroundGreen="0" backgroundBlue="0" segmentSize="50" segmentIndexIncrement="1" activeTimeMs="25" delayTimeMs="25" />
+            <Fade   stringId="U_MONITOR_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="100" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="L_MONITOR_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="100" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="BUTTON_PANEL_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="100" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="BUTTON_LIGHT_RING_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="100" delayTimeMs="0" reverse="true"/>
+            <SetSolidColor stringId="LOGO_STRING_ID" red="175" green="0" blue="0"/>
+            <SetSolidColor stringId="BODY_STRING_ID" red="175" green="0" blue="0"/>
+        </idle>
+        <freeGames>
+            <Chase  stringId="BASE_STRING_ID" foregroundRed="255" foregroundGreen="125" foregroundBlue="0" backgroundRed="175" backgroundGreen="0" backgroundBlue="0" segmentSize="50" segmentIndexIncrement="1" activeTimeMs="25" delayTimeMs="25" />
+            <Fade   stringId="U_MONITOR_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="L_MONITOR_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="BUTTON_PANEL_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="BUTTON_LIGHT_RING_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="LOGO_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="200" delayTimeMs="0" reverse="true"/>
+            <SetSolidColor stringId="BODY_STRING_ID" red="175" green="0" blue="0"/>
+        </freeGames>
+        <duringSpin>
+            <Chase  stringId="BASE_STRING_ID" foregroundRed="255" foregroundGreen="125" foregroundBlue="0" backgroundRed="175" backgroundGreen="0" backgroundBlue="0" segmentSize="50" segmentIndexIncrement="1" activeTimeMs="25" delayTimeMs="25" />
+            <Fade   stringId="U_MONITOR_STRING_ID" redA="255"  greenA="0"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="L_MONITOR_STRING_ID" redA="255"  greenA="0"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="BUTTON_PANEL_STRING_ID" redA="255"  greenA="0"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="BUTTON_LIGHT_RING_STRING_ID"  redA="255"  greenA="0"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <SetSolidColor stringId="LOGO_STRING_ID" red="175" green="0" blue="0"/>
+            <SetSolidColor stringId="BODY_STRING_ID" red="175" green="0" blue="0"/>
+        </duringSpin>
+        <duringWinCelebrations>
+            <Fade   stringId="BASE_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="U_MONITOR_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="L_MONITOR_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="BUTTON_PANEL_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="BUTTON_LIGHT_RING_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="LOGO_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+            <Fade   stringId="BODY_STRING_ID" redA="255"  greenA="125"  blueA="0" redB="175" greenB="0" blueB="0" fadeTimeMs="50" delayTimeMs="0" reverse="true"/>
+        </duringWinCelebrations>
+    </led>
+
+    <randomWild wildFadeInDuration="0.5"/>
+
+    <winMeter>
+        <sound lowMultiple="0" highMultiple="1.9" type="1">
+            <soundInfo sPath="winmeter/RollUp1" lowTime="0.4" hightTime="0.6"/>
+        </sound>
+        <sound lowMultiple="2" highMultiple="4.9" type="1">
+            <soundInfo sPath="winmeter/RollUp2" lowTime="0.7" hightTime="0.8"/>
+        </sound>
+        <sound lowMultiple="5" highMultiple="19.9" type="1">
+            <soundInfo sPath="winmeter/RollUp3" lowTime="1.2" hightTime="0.9"/>
+        </sound>
+        <sound lowMultiple="20" highMultiple="159.9" type="0">
+            <soundInfo sPath="winmeter/VSCelebration1a" lowTime="14" hightTime="30" animation="CelebrationMinor" playCount="13" animOverlap="2.5" lastAnimOverlap="2.5"/>
+        </sound>
+        <sound lowMultiple="160" highMultiple="99999999999" type="0">
+            <soundInfo sPath="winmeter/VSCelebration2a" lowTime="14" hightTime="30" animation="CelebrationMajor" playCount="13" animOverlap="2.5" lastAnimOverlap="2.5"/>
+        </sound>
+    </winMeter>
+
+
+    <winShow duration="1.857" landingDuration="0.6">
+        <symbol index="0" type="Flash"/>
+        <symbol index="1" type="Animation" duration="6.0"/>
+        <symbol index="2" type="Animation" duration="6.0"/>
+        <symbol index="3" type="Animation" duration="6.0"/>
+        <symbol index="4" type="Flash"/>
+        <symbol index="5" type="Flash"/>
+        <symbol index="6" type="Flash"/>
+        <symbol index="7" type="Flash"/>
+        <symbol index="8" type="Flash"/>
+        <symbol index="9" type="Flash"/>
+        <symbol index="10" type="Flash"/>
+        <symbol index="11" type="Flash"/>
+    </winShow>
+
+    <payLine pipTextColor="FFFFFFFF" pipTextFont="BetPipFont" baseGameNoPayBoxColor="ffffff66" freeGameNoPayBoxColor="00000044">
+        <line index="scatter" color="FF0000FF"/>
+        <line index="0" color="FF0000FF"/>
+        <line index="1" color="E400FFFF"/>
+        <line index="2" color="6C00FFFF"/>
+        <line index="3" color="0C00FFFF"/>
+        <line index="4" color="0096FFFF"/>
+        <line index="5" color="00FFC0FF"/>
+        <line index="6" color="12FF00FF"/>
+        <line index="7" color="D2FF00FF"/>
+        <line index="8" color="FFC600FF"/>
+        <line index="9" color="FF6C00FF"/>
+        <line index="10" color="D30303FF"/>
+        <line index="11" color="D3039BFF"/>
+        <line index="12" color="8C03D3FF"/>
+        <line index="13" color="4303D3FF"/>
+        <line index="14" color="0365D3FF"/>
+        <line index="15" color="03C7D3FF"/>
+        <line index="16" color="03D396FF"/>
+        <line index="17" color="12D303FF"/>
+        <line index="18" color="D3C703FF"/>
+        <line index="19" color="D37403FF"/>
+        <line index="20" color="FF4848FF"/>
+        <line index="21" color="FF48C1FF"/>
+        <line index="22" color="B448FFFF"/>
+        <line index="23" color="5548FFFF"/>
+        <line index="24" color="48ABFFFF"/>
+        <line index="25" color="48FFDFFF"/>
+        <line index="26" color="48FF55FF"/>
+        <line index="27" color="C5FF48FF"/>
+        <line index="28" color="FFDF48FF"/>
+        <line index="29" color="FF8948FF"/>
+        <line index="30" color="910000FF"/>
+        <line index="31" color="910063FF"/>
+        <line index="32" color="590091FF"/>
+        <line index="33" color="0A0091FF"/>
+        <line index="34" color="008C91FF"/>
+        <line index="35" color="009133FF"/>
+        <line index="36" color="8C9100FF"/>
+        <line index="37" color="915500FF"/>
+        <line index="38" color="611101FF"/>
+        <line index="39" color="FF7A7AFF"/>
+        <line index="40" color="FF7AB9FF"/>
+        <line index="41" color="DE7AFFFF"/>
+        <line index="42" color="7A7AFFFF"/>
+        <line index="43" color="7ABFFFFF"/>
+        <line index="44" color="7AFFE4FF"/>
+        <line index="45" color="96FF7AFF"/>
+        <line index="46" color="FFEE7AFF"/>
+        <line index="47" color="FFC57AFF"/>
+        <line index="48" color="FF907AFF"/>
+        <line index="49" color="AED8D5FF"/>
+    </payLine>
+
+    <help progressive="2" gamble = "4"/>
+
+    <messageBar font="MessageFont" visibleInFreeGames="true"/>
+
+    <message spinsSinceLastFeature="false"/>
+
+    <buttons>
+        <button name="Help"/>
+        <!--<button name="Language"/>-->
+        <button name="Denomination"/>
+        <!--<button name="Gamble"/>-->
+        <!-- <button name="AutoPlay"/> -->
+        <!--<button name="Play"/>-->
+        <button name="Volume"/>
+        <!-- <button name="MoreButton"/>-->
+        <button name="CashOut"/>
+        <button name="Logo"/>
+        <button name="Service"/>
+        <!-- <button name="TakeWin"/>-->
+        <button name="demo"/>
+        <button name="stops"/>
+        <button name="features"/>
+        <button name="DemoBTNs"/>
+    </buttons>
+
+    <meters bgMusicVolWhileRolling="0.1" freeGameRollingSoundVol="1">
+        <meter name="BetWinCredits" font="CreditsMeterFont" specialFont="CreditsMeterFont" color="#FFFFFFFF" specialColor="#FFFFFFFF" align="Right"/>
+        <meter name="LinesPlayed" font="CreditsMeterFont" specialFont="CreditsMeterFont" color="#FFFFFFFF" specialColor="#FFFFFFFF" align="center"/>
+        <meter name="BetPerLine" font="CreditsMeterFont" specialFont="CreditsMeterFont" color="#FFFFFFFF" specialColor="#FFFFFFFF" align="center"/>
+        <meter name="Bet" font="BetMeterFont" specialFont="BetMeterFont" color="#FFFFFFFF" specialColor="#FFFFFFFF" align="center"/>
+        <meter name="Credit" font="CreditsMeterFont" specialFont="CreditsMeterFont" color="#FFFFFFFF" specialColor="#FFFFFFFF" align="center"/>
+        <meter name="Win" font="WinMeterFont" specialFont="WinMeterFont" color="FFFFFFFF" specialColor="#FFFFFFFF" align="center"/>
+        <meter name="Denom" font="DenomFont" specialFont="DenomFont" color="FFFFFFFF" specialColor="#FFFFFFFF" align="Center"/>
+    </meters>
+</gameConfiguration>
+

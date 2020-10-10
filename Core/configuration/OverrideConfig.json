@@ -1,0 +1,16 @@
+[
+    {
+        "name": "AllowCashoutOnSASLock",
+        "booleanValue": true,
+        "category": "CONFIG_CATEGORY_COMMS",
+        "subCategory": "SAS",
+        "valueType": "CONFIG_VALUE_TYPE_BOOLEAN"
+    },
+    {
+        "name": "AuditMenuVersion",
+        "numberValue": "0",
+        "category": "CONFIG_CATEGORY_MENU",
+        "subCategory": "Audit",
+        "valueType": "CONFIG_VALUE_TYPE_NUM"
+ }
+]

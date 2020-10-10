@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Themes>
+<Themes>
+    <Theme name="Off" state="AttendantApp,Tilt,OutOfService,Reserve,DisabledByOnlineSystem,BillAccepting,CashoutPending" />
+    <Theme name="FadeGoldWhite" state="BonusActive,BonusDisplayPending,AwardSASProgressive,StartFreeSpin,ProgressiveIntro,ProgressiveStarted,FreeGameResults,FreeGameStarted" />
+    <Theme name="LRBlueRed" state="GambleStarted" />
+    <Theme name="Red" state="GambleWin" />
+    <Theme name="LRGoldWhite" state="PrimaryGameStarted,PayGameResults" />
+    <Theme name="Gold" state="GambleChoice,GameIdle" />
+    <Theme name="MachineIdle" state="MachineIdle" />
+</Themes>

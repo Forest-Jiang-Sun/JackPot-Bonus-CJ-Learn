@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coordinateLoader>
+    <resolution width="1920" height="1080">
+
+        <point name="Background">0,0</point>
+        <point name="Copyright">460,1045</point>
+        <point name="Logo">0,0</point>
+	  <point name="LinkLogo">45,-45</point>
+
+        <point name="Progressive1">385,168</point>
+        <point name="MaskP1">-2,165</point>
+        <point name="MaskP2">0,403</point>
+	  <point name="MaskLink">-2,282</point>
+
+        <bound name="JackpotMeter1">357,180,1220,206</bound>
+        <bound name="JackpotMeter2">532,403,867,146</bound>
+        <bound name="JackpotLink">357,295,1220,206</bound>
+        <bound name="JackpotWinMeter">180,380,1609,316</bound>
+       <point name="TopScreenCelebration">0,-1080</point>
+    </resolution>
+</coordinateLoader>

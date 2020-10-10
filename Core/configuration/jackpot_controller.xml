@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE JackpotController>
+<JackpotController protocol="AspectGaming" version="v1.0.0" enabled="true" hasProgressive="true" numOfMachines="1">
+    <Link broadcastPort="12047" dataPort="12000" timeOut="1000"/>
+    <Group id="1">
+  	<Jackpot level="1" name="0.10P1" type="SymbolDriven" baseAmount="$1000" increment="0.1%" />
+        <Jackpot level="2" name="0.10P2" type="SymbolDriven" baseAmount="$80" increment="0.3%" />
+  	<Jackpot level="3" name="0.25P1" type="SymbolDriven" baseAmount="$2500" increment="0.1%" />
+        <Jackpot level="4" name="0.25P2" type="SymbolDriven" baseAmount="$200" increment="0.3%" />
+  	<Jackpot level="5" name="0.50P1" type="SymbolDriven" baseAmount="$5000" increment="0.1%" />
+        <Jackpot level="6" name="0.50P2" type="SymbolDriven" baseAmount="$400" increment="0.3%" />
+  	<Jackpot level="7" name="1.00P1" type="SymbolDriven" baseAmount="$10000" increment="0.1%" />
+        <Jackpot level="8" name="1.00P2" type="SymbolDriven" baseAmount="$800" increment="0.3%" />
+  	<Jackpot level="9" name="2.00P1" type="SymbolDriven" baseAmount="$20000" increment="0.1%" />
+        <Jackpot level="10" name="2.00P2" type="SymbolDriven" baseAmount="$1600" increment="0.3%" />
+  	<Jackpot level="11" name="5.00P1" type="SymbolDriven" baseAmount="$50000" increment="0.1%" />
+        <Jackpot level="12" name="5.00P2" type="SymbolDriven" baseAmount="$4000" increment="0.3%" />
+  	<Jackpot level="13" name="10.00P1" type="SymbolDriven" baseAmount="$100000" increment="0.1%" />
+        <Jackpot level="14" name="10.00P2" type="SymbolDriven" baseAmount="$8000" increment="0.3%" />
+  	<Jackpot level="15" name="25.00P1" type="SymbolDriven" baseAmount="$250000" increment="0.1%" />
+        <Jackpot level="16" name="25.00P2" type="SymbolDriven" baseAmount="$20000" increment="0.3%" />
+  	<Jackpot level="17" name="50.00P1" type="SymbolDriven" baseAmount="$500000" increment="0.1%" />
+        <Jackpot level="18" name="50.00P2" type="SymbolDriven" baseAmount="$40000" increment="0.3%" />
+  	<Jackpot level="19" name="100.00P1" type="SymbolDriven" baseAmount="$1000000" increment="0.1%" />
+        <Jackpot level="20" name="100.00P2" type="SymbolDriven" baseAmount="$80000" increment="0.3%" />
+  	<Jackpot level="21" name="250.00P1" type="SymbolDriven" baseAmount="$2500000" increment="0.1%" />
+        <Jackpot level="22" name="250.00P2" type="SymbolDriven" baseAmount="$200000" increment="0.3%" />
+    </Group>
+</JackpotController>

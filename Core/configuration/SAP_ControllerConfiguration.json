@@ -1,0 +1,62 @@
+{
+  "ProgressiveLevelGroupings": {
+    "1": [
+	      {
+        "LevelID": 1,
+        "LevelName": "P1 .0% inc",
+        "ResetAmountInCredits": 10000,
+        "IncrementPercentages": [
+          0.000
+        ]
+      },
+      {
+        "LevelID": 2,
+        "LevelName": "P1 .1% inc",
+        "ResetAmountInCredits": 10000,
+        "IncrementPercentages": [
+          0.001
+        ]
+      },
+      {
+        "LevelID": 3,
+        "LevelName": "P2 .3% inc",
+        "ResetAmountInCredits": 0,
+        "IncrementPercentages": [
+          0.003
+        ]
+      },
+      {
+        "LevelID": 4,
+        "LevelName": "P1 .15% inc",
+        "ResetAmountInCredits": 10000,
+        "IncrementPercentages": [
+          0.0015
+        ]
+      },
+      {
+        "LevelID": 5,
+        "LevelName": "P2 .4% inc",
+        "ResetAmountInCredits": 0,
+        "IncrementPercentages": [
+          0.004
+        ]
+      },
+	  {
+        "LevelID": 6,
+        "LevelName": "P1 .25% inc",
+        "ResetAmountInCredits": 10000,
+        "IncrementPercentages": [
+          0.0025
+        ]
+      },
+      {
+        "LevelID": 7,
+        "LevelName": "P2 .5% inc",
+        "ResetAmountInCredits": 0,
+        "IncrementPercentages": [
+          0.005
+        ]
+      }
+    ]
+  }
+}

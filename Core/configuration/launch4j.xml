@@ -1,0 +1,28 @@
+<launch4jConfig>
+    <headerType>gui</headerType>
+    <outfile>build\AspectGamingPlatform.exe</outfile>
+    <jar>build\AspectGamingPlatform.jar</jar>
+    <dontWrapJar>false</dontWrapJar>
+    <errTitle></errTitle>
+    <downloadUrl>http://java.com/download</downloadUrl>
+    <supportUrl></supportUrl>
+    <cmdLine></cmdLine>
+    <chdir></chdir>
+    <priority>high</priority>
+    <stayAlive>false</stayAlive>
+    <icon>resources\icon\AspectGaming.ico</icon>
+    <classPath>
+        <mainClass>com.aspectgaming.core.CoreApp</mainClass>
+        <cp>lib/*.jar</cp>
+        <cp>math/*.jar</cp>
+    </classPath>
+    <jre>
+        <path></path>
+        <bundledJre64Bit>false</bundledJre64Bit>
+        <minVersion>1.8.0</minVersion>
+        <maxVersion></maxVersion>
+        <jdkPreference>preferJre</jdkPreference>
+        <runtimeBits>64</runtimeBits>
+        <opt>-Djava.library.path=lib;C:\Windows\System32</opt>
+    </jre>
+</launch4jConfig>

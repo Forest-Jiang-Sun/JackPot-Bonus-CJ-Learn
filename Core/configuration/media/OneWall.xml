@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Theme>
+<Theme name="OneWallMedia" version="1.0.0">
+    <Link mediaPort="11001" commandPort="12001" mediaBufferSize="102400" commandBufferSize="1024" />
+    <NumberOfMachines>3</NumberOfMachines>
+    <PixelsBetweenTopScreens>241</PixelsBetweenTopScreens>
+    <LockIfServerDisconnected>true</LockIfServerDisconnected>
+
+    <Animation name="Attract1" duration="22000" interval="25000">
+        <Video screen="TopScreen" file="D:/Media/topscreen*.mp4" />
+        <Sound screen="TopScreen" file="D:/Media/link.wav" />
+        <LED name="OneWall" duration="22000" />
+    </Animation>
+</Theme>

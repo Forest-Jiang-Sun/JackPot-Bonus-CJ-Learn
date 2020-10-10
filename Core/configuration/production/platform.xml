@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Platform name="AspectGamingPlatform" deploy="production">
+    <Machine serialNumber="SM-D27-002-0000000">
+        <Currency>USD</Currency>
+        <CreditLimit>500000</CreditLimit>
+        <GambleLimit>5000000</GambleLimit>
+        <TicketLimit>500000</TicketLimit>
+        <JackpotHandpayLimit>120000</JackpotHandpayLimit>
+        <ProgressiveHandpayLimit>5000000</ProgressiveHandpayLimit>
+        <UpperJackpotLimit>9999999999</UpperJackpotLimit>
+        <NoPlayCashoutLimit>1000000</NoPlayCashoutLimit>
+        <AcceptorLimit>5000000</AcceptorLimit>
+        <RTPLimit max="100.0" min="0.0"/>
+        <NumberOfLog>128</NumberOfLog>
+        <Persistence timesPerSecond="10" compress="1000000"/>
+        <CheckSignatureOnDoorClose>true</CheckSignatureOnDoorClose>
+        <TestMode>true</TestMode>
+        <MaskValidationNumber>true</MaskValidationNumber>
+        <VendorID>188</VendorID>
+        <AssetNumber>123456</AssetNumber>
+        <DenominationRevertToDefaultTime>180000</DenominationRevertToDefaultTime>
+        <LanguageRevertToDefaultTime>180000</LanguageRevertToDefaultTime>
+        <MinSpinInterval>0</MinSpinInterval>
+        <Clock sync="true" port="7744" poll="4000"/>
+    </Machine>
+    <AttendantMenu x="0" y="0" alwaysAccessible="false" mouse="false"/>
+    <Media type="com.aspectgaming.media.onewall.OneWallMedia">
+        <Controller enabled="false" volume="5"/>
+        <Client enabled="false" pos="1"/>
+    </Media>
+    <Signature>
+        <Path>AspectGamingPlatform.exe</Path>
+        <Path>lib</Path>
+    </Signature>
+    <IO board="Quixant">
+        <Battery checkInterval="7200000" alarmVoltage="2750"/>
+        <EmulationPanel enabled="false" x="1280" y="360" width="640" height="480" fullScreenId="0"/>
+        <Switches>
+            <Switch line="0" type="Attendant Menu"/>
+            <Switch line="1" type="Calibrate Touchscreen"/>
+        </Switches>
+        <IntrusionPorts>
+            <IntrusionPort line="0" type="Logic Door"/>
+            <IntrusionPort line="4" type="Main Door"/>
+            <IntrusionPort line="3" type="Cash Box Door"/>
+            <IntrusionPort line="2" type="Cash Box"/>
+            <IntrusionPort line="5" type="Belly Door"/>
+            <IntrusionPort line="6" type="Drop Door"/>
+            <IntrusionPort line="7" type="Optical Door"/>
+        </IntrusionPorts>
+        <Meters denomination="1" sleepTime="200">
+            <Meter index="2" type="cashPlayed"/>
+            <Meter index="0" type="cashWon"/>
+            <Meter index="1" type="cashIn"/>
+        </Meters>
+        <Lamps>
+            <Lamp line="5" type="AttendLamp"/>
+        </Lamps>
+        <Sound volume="0.1" minVolume="0.1" tiltLoopsPerPlay="3" tiltPlayInterval="0"/>
+        <BillAcceptor enabled="true" peripheral="JCM">
+            <Peripheral name="MEI" type="com.aspectgaming.core.io.billacceptor.MEIBillAcceptor">
+                <SerialPort port="COM5" bitRate="9600" dataBits="7" stopBits="1" parity="EVEN" timeOut="20" poll="150"/>
+            </Peripheral>
+            <Peripheral name="JCM" type="com.aspectgaming.core.io.billacceptor.JCMBillAcceptor">
+                <SerialPort port="COM5" bitRate="9600" dataBits="8" stopBits="1" parity="EVEN" timeOut="20" poll="150"/>
+            </Peripheral>
+            <Denominations/>
+        </BillAcceptor>
+        <TicketPrinter enabled="true" peripheral="Transact">
+            <Peripheral name="Transact" type="com.aspectgaming.core.io.ticketprinter.TransactTicketPrinter">
+                <SerialPort port="COM6" bitRate="9600" dataBits="8" stopBits="1" parity="NONE" timeOut="20" poll="200"/>
+                <Template cashable="TransactCashable.tkt" restricted="TransactRestricted.tkt" void="TransactVoid.tkt"/>
+            </Peripheral>
+            <Peripheral name="FutureLogic" type="com.aspectgaming.core.io.ticketprinter.FutureLogicTicketPrinter">
+                <SerialPort port="COM6" bitRate="9600" dataBits="8" stopBits="1" parity="NONE" timeOut="20" poll="200"/>
+                <Template cashable="FutureLogicCashable.tkt" restricted="FutureLogicRestricted.tkt" void="FutureLogicVoid.tkt"/>
+            </Peripheral>
+        </TicketPrinter>
+        <!--<KdeLED enabled="false" port="COM6"/>-->
+        <!--<Dmx512LED enabled="false" port="COM8" poll="33" controller="false"/>-->
+        
+    </IO>
+    <Ticket>
+        <Line1>Casino Name</Line1>
+        <Line2>Casino Location</Line2>
+        <Line3>Third Line</Line3>
+        <CashableTicketExpiration>30</CashableTicketExpiration>
+        <RestrictedTicketExpiration>30</RestrictedTicketExpiration>
+        <AutoResidualCashout>true</AutoResidualCashout>
+        <CashoutRestrictedCredits>true</CashoutRestrictedCredits>
+    </Ticket>
+    <SAS enabled="true" denom="1">
+        <Log enabled="false" dir=""/>
+        <Channel name="SAS_HOST1" enabled="true" address="1" >
+            <SerialPort port="COM3" bitRate="19200" dataBits="8" stopBits="1" parity="SPACE" timeOut="20"/>
+        </Channel>
+        <Channel name="SAS_HOST2" enabled="true" address="1" >
+            <SerialPort port="COM7" bitRate="19200" dataBits="8" stopBits="1" parity="SPACE" timeOut="20"/>
+        </Channel>
+        <Channel name="SAS_HOST3" enabled="false" address="1" >
+            <SerialPort port="COM8" bitRate="19200" dataBits="8" stopBits="1" parity="SPACE" timeOut="20"/>
+        </Channel>
+        <Feature name="LockUpAfterNoProgressiveBroadcast">true</Feature>
+        <Ticketing enabled="true" host="SAS_HOST1" valiationType="System"/>
+        <Progressive enabled="false" host="SAS_HOST2"/>
+        <LegacyBonus enabled="false" host="SAS_HOST1"/>
+        <GeneralControl host="SAS_HOST1"/>
+        <AFT enabled="true" host="SAS_HOST1" transferLimit="5000000">
+            <Feature name="InHouseTransfer">true</Feature>
+            <Feature name="BonusTransfer">true</Feature>
+            <Feature name="DebitTransfer">false</Feature>
+            <Feature name="TransferToGamingMachine">true</Feature>
+            <Feature name="TransferFromGamingMachine">true</Feature>
+            <Feature name="BonusAwardToGamingMachine">true</Feature>
+            <Feature name="CashoutToHostControllableByHost">true</Feature>
+            <Feature name="HostCashoutModeHard">true</Feature>
+            <Feature name="PartialTransferToHost">true</Feature>
+            <Feature name="LockAfterTransferRequest">false</Feature>
+            <Feature name="CashoutToHost">true</Feature>
+            <Feature name="TransferToPrinter">false</Feature>
+            <Feature name="PrinterAvailableForReceipts">false</Feature>
+            <Feature name="CustomTicketData">false</Feature>
+        </AFT>
+    </SAS>
+    <GAT enabled="false">
+        <GATService name="GAT_SERVER" enabled="false">
+            <SerialPort port="COM4" bitRate="9600" dataBits="8" stopBits="1" parity="NONE"/>
+        </GATService>
+    </GAT>
+</Platform>

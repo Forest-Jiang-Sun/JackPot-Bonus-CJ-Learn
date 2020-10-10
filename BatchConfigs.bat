@@ -1,0 +1,6 @@
+@echo off
+SET GAMENAME=JackpotBonus
+SET GAMEVERSION=v1.0.22
+
+SET MATHNAME=JackpotBonusMath
+SET MATHVERSION=1.0.22

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Options>
+<Options>
+    <Option name="Free Games" value="main.stops=12,12,12,1,2,3,4,1,6,7,8,9,10,11"/>
+    <Option name="Reels:0,0,0,0,0" value="main.stops.indices=0,0,0,0,0"/>
+    <Option name="Run Script" value="script=script.txt"/>
+</Options>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="aspect">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JackpotBonusMath/lib/aspect/AspectRNG-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JackpotBonusMath/lib/aspect/AspectGamingPlatform.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

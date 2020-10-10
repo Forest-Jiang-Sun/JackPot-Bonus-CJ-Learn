@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<project name="AspectGamingCore" default="emulation">
+    <target name="copy_platform">
+        <copy todir="${GAME}/build/">
+            <fileset dir="release/" />
+            <fileset dir="configuration/${RELEASE}">
+                <include name="*.ini" />
+            </fileset>
+        </copy>
+        <copy todir="${GAME}/build/math">
+            <fileset dir="math/">
+                <include name="*.jar" />
+            </fileset>
+        </copy>
+        <copy todir="${GAME}/build/configuration">
+            <fileset dir="configuration">
+                <include name="*.*" />
+                <include name="media/**" />
+                <include name="led/**" />
+                <include name="test/**" />
+            </fileset>
+            <fileset dir="configuration/${RELEASE}">
+                <include name="*.xml" />
+                <include name="*.txt" />
+            </fileset>
+        </copy>
+        <copy todir="${GAME}/build/resources">
+            <fileset dir="resources/" />
+        </copy>
+    </target>
+</project>

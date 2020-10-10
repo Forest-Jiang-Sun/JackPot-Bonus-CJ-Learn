@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Colors>
+<Colors>
+    <Color name="Red" id="R" r="255" g="0" b="0" />
+    <Color name="Yellow" id="Y" r="255" g="215" b="0" />
+    <Color name="Green" id="G" r="0" g="255" b="0" />
+    <Color name="Blue" id="B" r="0" g="0" b="255" />
+    <Color name="Purple" id="P" r="204" g="0" b="255" />
+    <Color name="White" id="W" r="255" g="255" b="255" />
+</Colors>

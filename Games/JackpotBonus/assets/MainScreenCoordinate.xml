@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<coordinateLoader>
+    <resolution width="1920" height="1080">
+        <point name="BetWinCredits">85,861</point>
+        <point name="Zero">0,0</point>
+
+        <bound name="LinesPlayed">307,945,125,65</bound>
+        <bound name="BetPerLine">484,945,125,65</bound>
+        <bound name="Bet">650,945,125,65</bound>
+        <bound name="Credit">1177,945,240,65</bound>
+        <bound name="Win">1473,940,193,100</bound>
+
+        <bound name="BetTouchArea">650,940,130,65</bound>
+        <bound name="CreditTouchArea">1178,945,235,65</bound>
+        <bound name="WinTouchArea">1475,940,191,100</bound>
+        <point name="CashOutBt">1719,908</point>
+        <point name="ServiceBt">1719,982</point>
+        <point name="Volume">225,958</point>
+        <point name="LanguageBt">225,989</point>
+        <point name="HelpBt">101,994</point>
+	<point name="LogoBt">101,911</point>
+        <point name="TakeWinBtnBt">107,982</point>
+        <point name="GambleBt">1756,838</point>
+        <point name="Denomination">850,1023</point>
+        <bound name="Denomination">830,894,256,110</bound>
+        <point name="Leaf">1727,1004</point>
+        <point name="Celebration">0,0</point>
+        <bound name="JackpotWinMeter">180,380,800,316</bound>
+        <point name="GrowingBg">445,255</point>
+        <point name="TotalWin">640,255</point>
+        <point name="TotalWinBox">445,255</point>
+        <point name="Credits">785,662</point>
+	<point name="MainScreenCelebration">0,0</point>
+	<point name="WinX">0,0</point>
+        <bound name="WinXLabel">1427,810,270,90</bound>
+
+        <point name="SingleReel0">286,213</point>
+        <point name="SingleReel1">765,213</point>
+        <point name="SingleReel2">1235,213</point>
+
+
+        <offset name="WinShow1">0,0</offset>
+        <offset name="WinShow2">0,0</offset>
+        <offset name="WinShow3">0,0</offset>
+        <offset name="WinShow4">0,0</offset>
+
+        <offset name="WildLand">-83,-86</offset>
+
+        <offset name="WinLineBox">-3,-2</offset>
+        <offset name="DiagnosticBox">-35,-70</offset>
+        <offset name="upBtnOffset">0,500</offset>
+
+        <point name="Background">0,0</point>
+        <point name="Immortal">0,-30</point>
+        <point name="WinTrack">388,893</point>
+
+        <point name="FreeGame">126,14</point>
+        <point name="Progressive">1460,5</point>
+        <point name="NoProgressive">1400,5</point>
+        <point name="Logo">730,7</point>
+        <point name="LogoAnimation">5,-5</point>
+
+        <point name="FreeGameAwarded">388,888</point>
+        <point name="FreeGameRemaining">756,888</point>
+        <point name="FreeGameMultiplier">1155,883</point>
+
+        <point name="AutoPlay">1543,960</point>
+        <point name="Play">1775,606</point>
+
+        <point name="reelsbg">122,22</point>
+        <point name="freeGameMessage">297,820</point>
+
+        <point name="IntroNumber">505,145</point>
+        <point name="IntroWord1">268,395</point>
+        <point name="PressButton">246,570</point>
+
+
+        <point name="PressSpinPrompt">400,820</point>
+        <point name="TransitionIn">0,0</point>
+        <point name="TotalWinZh">220,300</point>
+        <point name="NumFreeGame">370,360</point>
+        <point name="NumFreeGameZh">625,300</point>
+        <point name="PressPlay">460,800</point>
+        <point name="PressPlayZh">630,750</point>
+
+        <point name="GambleMask">0,49</point>
+        <point name="GambleBg">109,22</point>
+        <point name="RiskAll">931,70</point>
+        <point name="RiskHalf">655,70</point>
+        <point name="Black">536,429</point>
+        <point name="Red">346,429</point>
+        <point name="Spade">1148,423</point>
+        <point name="Heart">1244,423</point>
+        <point name="Clubs">1340,423</point>
+        <point name="Diamond">1436,423</point>
+        <point name="TakeWin">1071,583</point>
+        <point name="GambleInGamle">957,583</point>
+
+        <point name="GambleMessage">734,687</point>
+        <point name="Card">829,267</point>
+
+        <bound name="RiskAllTouchArea">978,117, 239, 53</bound>
+        <bound name="RiskHalfTouchArea">700,117, 240, 53</bound>
+        <bound name="BlackTouchArea">567,455, 170, 84</bound>
+        <bound name="RedTouchArea">375,455, 170, 84</bound>
+        <bound name="SpadeTouchArea">1180, 454, 84, 81</bound>
+        <bound name="HeartTouchArea">1276, 454, 84, 81</bound>
+        <bound name="ClubsTouchArea">1372, 454, 84, 81</bound>
+        <bound name="DiamondTouchArea">1468, 454, 84, 81</bound>
+        <bound name="TakeWinTouchArea">1116,630, 102, 82</bound>
+        <bound name="TakeWinBtnTouchArea">1795, 731, 109, 102</bound>
+        <bound name="GambleTouchArea">1001, 631, 107, 85</bound>
+
+        <bound name="touchReelStop1">262, 280, 442, 540</bound>
+        <bound name="touchReelStop2">740, 280, 442, 540</bound>
+        <bound name="touchReelStop3">1220, 280, 442, 540</bound>
+
+        <point name="HelpPage">0,0</point>
+        <point name="HelpButtonLeft">421,900</point>
+        <point name="HelpButtonRight">1290,900</point>
+        <point name="HelpButtonReturnToGame">855,900</point>
+        <point name="HelpButtonlanguage">1580,797</point>
+
+        <point name="Retrigger">1132,25</point>
+        <point name="RetriggerNumberEn">320,338</point>
+        <point name="RetriggerNumberCh">320,338</point>
+
+        <point name="SlamIntroButton">0, 0</point>
+
+        <point name="IdentifyLine1">260,535</point>
+        <point name="IdentifyLine2">260,680</point>
+        <point name="IdentifyLine3">260,380</point>
+        <point name="IdentifyLine4">308,281</point>
+        <point name="IdentifyLine5">308,281</point>
+
+        <point name="DiagnosticMessage">0,829</point>
+
+        <bound name="BonusJackpot">0,500,1920,210</bound>
+        <point name="BonusJackpotBoard">197,193</point>
+        <point name="BonusJackpotMessage">179,200</point>
+        <point name="BonusJackpotVideo">0,64</point>
+        <point name="BonusMessage1">403,540</point>
+        <point name="BonusMessage3">403,440</point>
+        <point name="BonusMessage4">328,380</point>
+
+        <point name="NumYEN">686,443</point>
+        <point name="NumYCN">827,435</point>
+        <point name="NumZEN">1368,523</point>
+        <point name="NumZCN">1348,523</point>
+
+        <point name="Mask1">163.5,169.2</point>
+        <point name="Mask2">957.2,213.2</point>
+        <point name="Momo">466,704</point>
+        <point name="Cloud">985.3,756.1</point>
+
+        <point name="Jackpot4">150,217</point>
+        <point name="Jackpot3">500,172</point>
+        <point name="Jackpot2">870,104</point>
+        <point name="Jackpot1">1250,172</point>
+        <point name="Jackpot5">1560,75</point>
+
+        <point name="PickResult4">100,460</point>
+        <point name="PickResult3">456,460</point>
+        <point name="PickResult2">812,460</point>
+        <point name="PickResult1">1168,460</point>
+        <point name="PickResult5">1524,460</point>
+
+        <point name="CloudFg1">30,454</point>
+        <point name="CloudBg1">48,280</point>
+
+        <point name="Jackpot7">460,180</point>
+        <point name="Jackpot6">860,116</point>
+        <point name="Jackpot8">1241,69</point>
+
+        <point name="PickResult7">530,480</point>
+        <point name="PickResult6">895,480</point>
+        <point name="PickResult8">1260,480</point>
+
+        <point name="CloudFg2">306,400</point>
+        <point name="CloudBg2">395,315</point>
+
+        <point name="TestDemo">6,341</point>
+        <point name="TestDemoItem1">6,251</point>
+        <point name="TestDemoItem2">6,164</point>
+        <point name="TestDemoItem3">6,128</point>
+
+        <point name="TestSpin">6,772</point>
+
+        <point name="ReelsAnim">123,21</point>
+
+        <point name="RedReels">123,21</point>
+        <point name="RedReel5">1455,21</point>
+        <point name="PreShow">0,0</point>
+        <point name="OfaKind5">197,272</point>
+        <point name="FullReelSparkle">1272,-57</point>
+        <point name="JackPotAnim0">290,286</point>
+        <point name="JackPotAnim1">287,286</point>
+        <point name="JackPotAnim2">310,294</point>
+        <point name="JackPotAnim3">470,283</point>
+        <point name="JadeLink">196,116</point>
+        <point name="RemaingSpin">331,337</point>
+        <point name="PressSpin">372,111</point>
+
+        <point name="Symbol0">158,61</point>
+        <point name="Symbol1">488,61</point>
+        <point name="Symbol2">818,61</point>
+        <point name="Symbol3">1148,61</point>
+        <point name="Symbol4">1478,61</point>
+
+        <point name="5ofaKindTicker">1220,0</point>
+
+        <point name="FreeGameIntro">0,0</point>
+
+        <point name="LineNumFrame1">1680,505</point>
+        <point name="LineNumFrame2">1680,651</point>
+        <point name="LineNumFrame3">1680,351</point>
+        <point name="LineNumFrame4">1680,250</point>
+        <point name="LineNumFrame5">1680,760</point>
+
+        <bound name="SymbolOverlay">144,48,1308,866</bound>
+
+        <bound name="FPS">0,1070,1920,8</bound>
+        <bound name="Info">0,0,1920,8</bound>
+        <bound name="SystemMessage">1275,0,640,8</bound>
+
+        <bound name="ErrorMessage">100,300,1080,468</bound>
+
+
+        <bound name="TotalWin">326,330,1274,414</bound>
+        <bound name="FreeGameRemaining">1038,906,72,38</bound>
+        <bound name="FreeGameAwarded">660,906,72,38</bound>
+        <bound name="FreeGameMultiplier">1387,903,116,43</bound>
+        <bound name="FreeGameTotalWin">1047,720,168,30</bound>
+        <bound name="MessageBar1">1105,1058,440,40</bound>
+        <bound name="MessageBar2">270,1058,550,40</bound>
+        <bound name="MessageBar3">15,3,420,40</bound>
+        <bound name="MessageBar4">15,23,420,40</bound>
+        <bound name="CurrentBall">503,906,43,44</bound>
+        <bound name="PreviousBall">559,914,785,27</bound>
+        <bound name="RiskHalf">709,182,227,40</bound>
+        <bound name="RiskAll">984,182,227,40</bound>
+        <bound name="TakeWin">712,636,271,41</bound>
+        <bound name="Prompt">157,823,1613,85</bound>
+        <bound name="GambleHistory">698,731,621,48</bound>
+        <bound name="PayLinesAndBet">310,853,1300,10</bound>
+        <bound name="PayLineNumber">35,38</bound>
+
+        <bound name="gambleMaxRound.en-US">1122,507,72,44</bound>
+        <bound name="gambleLimit1.en-US">1077,560,197,44</bound>
+        <bound name="gambleLimit2.en-US">1259,613,197,44</bound>
+        <bound name="gambleMaxRound.zh-CHT">1146,512,73,38</bound>
+        <bound name="gambleLimit1.zh-CHT">1066,565,203,38</bound>
+        <bound name="gambleLimit2.zh-CHT">947,614,203,38</bound>
+
+        <bound name="betMinimum.en-US">764,235,193,38</bound>
+        <bound name="betMaximum.en-US">811,295,193,38</bound>
+        <bound name="betMinimum.zh-CHT">1153,240,117,38</bound>
+        <bound name="betMaximum.zh-CHT">1162,294,117,38</bound>
+
+        <bound name="HelpLine1.en-US">270,245,1370,50</bound>
+        <bound name="HelpLine2.en-US">270,312,1370,50</bound>
+        <bound name="HelpLine3.en-US">270,380,1370,50</bound>
+        <bound name="HelpLine1.zh-CHT">270,250,1370,50</bound>
+        <bound name="HelpLine2.zh-CHT">270,317,1370,50</bound>
+        <bound name="HelpLine3.zh-CHT">270,385,1370,50</bound>
+
+        <bound name="LineNumber1">1715,548,67,45</bound>
+        <bound name="LineNumber2">1715,403,67,45</bound>
+        <bound name="LineNumber3">1715,703,67,45</bound>
+        <bound name="LineNumber4">1715,798,67,45</bound>
+        <bound name="LineNumber5">1715,293,67,45</bound>
+
+        <bound name="SubSymbol0">1478,61,285,210</bound>
+        <bound name="SubSymbol1">1478,271,285,210</bound>
+        <bound name="SubSymbol2">1478,481,285,210</bound>
+        <bound name="SubSymbol3">1478,691,285,210</bound>
+
+        <path name="Error">
+            <point>540,30</point>
+            <point>540,60</point>
+        </path>
+
+        <!-- Game Recall -->
+
+        <point name="Recall">63,249</point>
+
+        <point name="RecallSymbol0">140,270</point>
+        <point name="RecallSymbol1">304,270</point>
+        <point name="RecallSymbol2">470,270</point>
+        <point name="RecallSymbol3">635,270</point>
+        <point name="RecallSymbol4">800,270</point>
+
+        <point name="RecallSymbol5">140,375</point>
+        <point name="RecallSymbol6">304,375</point>
+        <point name="RecallSymbol7">470,375</point>
+        <point name="RecallSymbol8">635,375</point>
+        <point name="RecallSymbol9">800,375</point>
+
+        <point name="RecallSymbol10">140,480</point>
+        <point name="RecallSymbol11">304,480</point>
+        <point name="RecallSymbol12">470,480</point>
+        <point name="RecallSymbol13">635,480</point>
+        <point name="RecallSymbol14">800,480</point>
+
+        <point name="RecallSymbol15">140,585</point>
+        <point name="RecallSymbol16">304,585</point>
+        <point name="RecallSymbol17">470,585</point>
+        <point name="RecallSymbol18">635,585</point>
+        <point name="RecallSymbol19">800,585</point>
+
+        <point name="RecallRiskAll">659,303</point>
+        <point name="RecallRiskHalf">512,303</point>
+        <point name="RecallBlack">271,514</point>
+        <point name="RecallRed">271,458</point>
+        <point name="RecallSpade">634,461</point>
+        <point name="RecallHeart">678,461</point>
+        <point name="RecallHeart">678,461</point>
+        <point name="RecallClubs">722,461</point>
+        <point name="RecallDiamond">766,461</point>
+        <point name="RecallGambleMessage">643,541</point>
+        <point name="RecallCard">480,380</point>
+
+        <bound name="RecallRiskHalf">410,329,120,21</bound>
+        <bound name="RecallRiskAll">555,329,120,21</bound>
+        <bound name="RecallTakeWin">630,521,120,21</bound>
+
+       <bound name="RecallDenomination">955,840,256,110</bound>
+
+        <bound name="RecallLinesPlayed">205,714,87,47</bound>
+        <bound name="RecallBetPerLine">295,714,87,47</bound>
+        <bound name="RecallBet">377,714,87,47</bound>
+        <bound name="RecallCredit">645,714,134,47</bound>
+        <bound name="RecallWin">782,718,134,47</bound>
+
+        <bound name="RecallAwarded">394,700,35,20</bound>
+        <bound name="RecallRemaining">581,700,35,20</bound>
+        <bound name="RecallMultiplier">756,700,55,20</bound>
+
+        <point name="ErrorTiltBG">198,260</point>
+        <bound name="ErrorTiltMessage">230,260,1460,274</bound>
+        <point name="SubTiltBG">198,512</point>
+        <bound name="SubTiltMessage">230,512,1460,174</bound>
+        <point name="AttendantTilt">198,665</point>
+    </resolution>
+</coordinateLoader>

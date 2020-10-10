@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Script>
+<Script>
+    <Action state="GameIdle" timeMin="0" timeMax="2000">
+        <Button type="Play" weight="5"/>
+        <!-- <Button type="Selection" weight="1"/>
+        <Button type="Bet" weight="1"/> -->
+    </Action>
+    <Action state="PayGameResults,ReelStop,FreeGameStarted,FreeGameResults">
+        <Button type="Play" weight="2"/>
+        <!-- <Button type="Selection" weight="1"/> -->
+    </Action>
+    <Action state="GambleChoice" timeMin="0" timeMax="5000">
+        <Button type="Play" weight="5"/>
+        <!-- <Button type="Gamble" weight="5"/>
+        <Button type="Selection" weight="1"/>
+        <Button type="Bet" weight="1"/> -->
+    </Action>
+    <Action state="GambleStarted" timeMin="1000" timeMax="4000">
+        <Button gambleType="Spades" weight="1"/>
+        <Button gambleType="Hearts" weight="1"/>
+        <Button gambleType="Clubs" weight="1"/>
+        <Button gambleType="Diamonds" weight="1"/>
+        <Button gambleType="Red" weight="5"/>
+        <Button gambleType="Black" weight="5"/>
+        <Button gambleType="Take Win" weight="1"/>
+    </Action>
+    <Action state="GambleDisplayPending" timeMin="1000" timeMax="4000">
+        <Button type="Cashout"/>
+    </Action>    
+    <Action state="GambleWin" timeMin="1000" timeMax="4000">
+        <Button type="Gamble" weight="1"/>
+        <Button type="Cashout" weight="1"/>
+    </Action>
+    <Action state="StartFreeSpin,ProgressiveIntro">
+        <Button type="Play"/>
+    </Action>
+
+    <Action state="PayGameResults,ReelStop,FreeGameIntro,BonusActive" timeMin="2000" timeMax="5000" oneTimeEach="true">
+        <Touch x="240" y="300" weight="1"/>
+        <Touch x="0.5" y="0.39" weight="1"/>
+        <Touch x="1050" y="300" weight="1"/>
+    </Action>
+</Script>

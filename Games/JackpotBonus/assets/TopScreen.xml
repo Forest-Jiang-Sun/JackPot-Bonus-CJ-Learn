@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameConfiguration debug="true" type="TopScreen">
+    <display screenIndex="1">
+        <x>0</x>
+        <y>0</y>
+        <width>1920</width>
+        <height>1080</height>
+        <vSync>false</vSync>
+        <fps>58</fps>
+        <visible>true</visible>
+        <undecorated>false</undecorated>
+    </display>
+
+    <listener>
+        <data>CommandData</data>
+        <data>ContextData</data>
+        <data>PaytableData</data>
+        <data>ProgressiveValuesData</data>
+        <data>GameResetData</data>
+        <data>SettingData</data>
+
+        <action>StartAttract</action>
+        <action>StopAttract</action>
+    </listener>
+
+    <openGL useGL30="false" samples="0" pixelBufferObject="true"/>
+
+    <resolutions width="1920" height="1080" video="1920x1080">
+        <components>
+            <component>com.aspectgaming.gdx.component.audio.AudioComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.background.TopScreenBackgroundComponent</component>
+            <component>com.aspectgaming.gdx.component.drawable.progressive.TopScreenProgressiveComponent</component>
+<!--            <component>com.aspectgaming.gdx.component.drawable.progressive.ProgressiveTopCoin</component>-->
+            <!--<component debug="true">com.aspectgaming.gdx.component.drawable.info.InfoComponent</component>-->
+        </components>
+
+        <background>
+			<sprite name="Background" path="Background/1920x1080/bg" mode="BaseGame"/>
+			<sprite name="Background" path="Background/1920x1080/bg" mode="FreeGame"/>
+        </background>
+
+        <paytable duration="2" type="Flash" indexFont="PaytableIndexFont" valueFont="PaytableFont"/>
+    </resolutions>
+
+    <rollingMeter rollingInterval="0.3" rollingTime="0.3" rollingRangeValue="100"/>
+</gameConfiguration>
